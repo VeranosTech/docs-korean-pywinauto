@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.findbestmatch.txt:2
+msgid "pywinauto.findbestmatch"
+msgstr ""
+
+#: of pywinauto.findbestmatch:1
+msgid "Module to find the closest match of a string in a list"
+msgstr ""
+
+#: of pywinauto.findbestmatch.MatchError:1
+msgid "A suitable match could not be found"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict:1
+msgid "A dictionary subclass that handles making its keys unique"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict.find_best_matches:1
+msgid "Return the best matches for search_text in the items"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict.find_best_matches:3
+msgid "**search_text** the text to look for"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict.find_best_matches:4
+msgid "**clean** whether to clean non text characters out of the strings"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict.find_best_matches:5
+msgid "**ignore_case** compare strings case insensitively"
+msgstr ""
+
+#: of pywinauto.findbestmatch.build_unique_dict:1
+msgid "Build the disambiguated list of controls"
+msgstr ""
+
+#: of pywinauto.findbestmatch.build_unique_dict:3
+msgid ""
+"Separated out to a different function so that we can get the control "
+"identifiers for printing."
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_control_matches:1
+msgid "Returns the control that is the the best match to search_text"
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_control_matches:3
+msgid ""
+"This is slightly differnt from find_best_match in that it builds up the "
+"list of text items to search through using information from each control."
+" So for example for there is an OK, Button then the following are all "
+"added to the search list: \"OK\", \"Button\", \"OKButton\""
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_control_matches:9
+msgid ""
+"But if there is a ListView (which do not have visible 'text') then it "
+"will just add \"ListView\"."
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:1
+msgid "Return the item that best matches the search_text"
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:3
+msgid "**search_text** The text to search for"
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:4
+msgid "**item_texts** The list of texts to search through"
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:5
+msgid ""
+"**items** The list of items corresponding (1 to 1) to the list of texts "
+"to search through."
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:7
+msgid ""
+"**limit_ratio** How well the text has to match the best match. If the "
+"best match matches lower then this then it is not considered a match and "
+"a MatchError is raised, (default = .5)"
+msgstr ""
+
+#: of pywinauto.findbestmatch.get_control_names:1
+msgid "Returns a list of names for this control"
+msgstr ""
+
+#: of pywinauto.findbestmatch.get_non_text_control_name:1
+msgid ""
+"return the name for this control by finding the closest text control "
+"above and to its left"
+msgstr ""
+
+#: of pywinauto.findbestmatch.is_above_or_to_left:1
+msgid "Return true if the other_ctrl is above or to the left of ref_control"
+msgstr ""
+

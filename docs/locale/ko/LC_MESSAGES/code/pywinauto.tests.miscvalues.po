@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.miscvalues.txt:2
+msgid "pywinauto.tests.miscvalues"
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:1
+msgid "Miscellaneous Control properties Test"
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:3
+msgid ""
+"**What is checked** This checks various values related to a control in "
+"windows. The values tested are class_name      The class type of the "
+"control style   The Style of the control (GetWindowLong) exstyle The "
+"Extended Style of the control (GetWindowLong) help_id The Help ID of the "
+"control (GetWindowLong) control_id      The Control ID of the control "
+"(GetWindowLong) user_data       The User Data of the control "
+"(GetWindowLong) Visibility      Whether the control is visible or not"
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:14
+msgid ""
+"**How is it checked** After retrieving the information for the control we"
+" compare it to the same information from the reference control."
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:18
+msgid ""
+"**When is a bug reported** If the information does not match then a bug "
+"is reported."
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:21
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description ValueType       What value is incorrect "
+"(see above), String Ref     The reference value converted to a string, "
+"String Loc     The localised value converted to a string, String"
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:28
+msgid ""
+"**Is Reference dialog needed** This test will not run if the reference "
+"controls are not available."
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:31
+msgid ""
+"**False positive bug reports** Some values can change easily without any "
+"bug being caused, for example User Data is actually meant for programmers"
+" to store information for the control and this can change every time the "
+"software is run."
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:36
+msgid "**Test Identifier** The identifier for this test/bug is \"MiscValues\""
+msgstr ""
+
+#: of pywinauto.tests.miscvalues.MiscValuesTest:1
+msgid "Return the bugs from checking miscelaneous values of a control"
+msgstr ""
+

@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.leadtrailspaces.txt:2
+msgid "pywinauto.tests.leadtrailspaces"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:1
+msgid "Different Leading and Trailing Spaces Test"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:3
+msgid ""
+"**What is checked** Checks that the same space characters (<space>, "
+"<tab>, <enter>, <vertical tab>) are before and after all non space "
+"characters in the title of the control when compared to the reference "
+"control."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:8
+msgid ""
+"**How is it checked** Find the 1st non-space character, and the "
+"characters of the title up to that are the leading spaces. Find the last "
+"non-space character, and the characters of the title after that are the "
+"trailing spaces. These are then compared to the lead and trail spaces "
+"from the reference control and if they are not exactly the then a bug is "
+"reported."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:16
+msgid ""
+"**When is a bug reported** When either the leading or trailing spaces of "
+"the control being tested does not match the equivalent spaces of the "
+"reference control exactly."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:20
+msgid "**Bug Extra Information** The bug contains the following extra information"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:23
+msgid ""
+"**Lead-Trail**  Whether this bug report is for the leading or trailing "
+"spaces of the control, String"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:26
+msgid "This will be either:"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:28
+msgid "\"Leading\"  bug relating to leading spaces"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:29
+msgid "\"Trailing\"  bug relating to trailing spaces"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:31
+msgid ""
+"**Ref**  The leading or trailings spaces of the reference string "
+"(depending on Lead-Trail value), String"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:33
+msgid ""
+"**Loc**  The leading or trailings spaces of the local string (depending "
+"on Lead-Trail value), String"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:36
+msgid ""
+"**Is Reference dialog needed** This test will not run if the reference "
+"controls are not available."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:39
+msgid ""
+"**False positive bug reports** This is usually not a very important test,"
+" so if it generates many false positives then we should consider removing"
+" it."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:43
+msgid ""
+"**Test Identifier** The identifier for this test/bug is "
+"\"LeadTrailSpaces\""
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces.GetLeadSpaces:1
+msgid "Return the leading spaces of the string"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces.GetTrailSpaces:1
+msgid "Return the trailing spaces of the string"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces.LeadTrailSpacesTest:1
+msgid "Return the leading/trailing space bugs for the windows"
+msgstr ""
+

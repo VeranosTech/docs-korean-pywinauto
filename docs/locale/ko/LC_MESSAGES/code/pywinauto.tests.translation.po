@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.translation.txt:2
+msgid "pywinauto.tests.translation"
+msgstr ""
+
+#: of pywinauto.tests.translation:1
+msgid "Translation Test"
+msgstr ""
+
+#: of pywinauto.tests.translation:3
+msgid ""
+"**What is checked** This checks for controls which appear not to be "
+"translated."
+msgstr ""
+
+#: of pywinauto.tests.translation:6
+msgid ""
+"**How is it checked** It compares the text of the localised and reference"
+" controls."
+msgstr ""
+
+#: of pywinauto.tests.translation:9
+msgid ""
+"If there are more than string in the control then each item is searched "
+"for in the US list of titles (so checking is not order dependent). The "
+"indices for the untranslated strings are returned in a comma separated "
+"string. Also the untranslated strings themselves are returned (all as one"
+" string). These strings are not escaped and are delimited as "
+"\"string1\",\"string2\",...\"stringN\"."
+msgstr ""
+
+#: of pywinauto.tests.translation:17
+msgid "**When is a bug reported**"
+msgstr ""
+
+#: of pywinauto.tests.translation:19
+msgid ""
+"If the text of the localised control is identical to the reference "
+"control (in case, spacing i.e.  a binary compare) then it will be flagged"
+" as untranslated. Otherwise the control is treated as translated."
+msgstr ""
+
+#: of pywinauto.tests.translation:23
+msgid ""
+"Note: This is the method to return the least number of bugs. If there are"
+" differences in any part of the string (e.g. a path or variable name) but"
+" the rest of the string is untranslated then a bug will not be "
+"highlighted"
+msgstr ""
+
+#: of pywinauto.tests.translation:27
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description Strings         The list of the "
+"untranslated strings as explained above StringIndices           The list "
+"of indices (0 based) that are untranslated. This will usually be 0 but if"
+" there are many strings in the control untranslated it will report ALL "
+"the strings e.g. 0,2,5,19,23"
+msgstr ""
+
+#: of pywinauto.tests.translation:35
+msgid "**Is Reference dialog needed** The reference dialog is always necessary."
+msgstr ""
+
+#: of pywinauto.tests.translation:38
+msgid ""
+"**False positive bug reports** False positive bugs will be reported in "
+"the following cases. -       The title of the control stays the same as "
+"the US because the translation is the same as the English text(e.g. Name:"
+" in German) -       The title of the control is not displayed (and not "
+"translated). This can sometimes happen if the programmer displays "
+"something else on the control after the dialog is created."
+msgstr ""
+
+#: of pywinauto.tests.translation:46
+msgid "**Test Identifier** The identifier for this test/bug is \"Translation\""
+msgstr ""
+
+#: of pywinauto.tests.translation.TranslationTest:1
+msgid "Returns just one bug for each control"
+msgstr ""
+

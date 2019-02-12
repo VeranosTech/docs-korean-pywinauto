@@ -1,0 +1,605 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../HowTo.txt:3
+msgid "How To's"
+msgstr ""
+
+#: ../../HowTo.txt:6
+msgid "Definitions"
+msgstr ""
+
+#: ../../HowTo.txt:7
+msgid "Some important defitions may be helpful for beginners."
+msgstr ""
+
+#: ../../HowTo.txt:9
+msgid ""
+"**Dialog** is a window containing several other GUI elements/controls "
+"like buttons, edit boxes etc. Dialog is not necessarily a main window. "
+"Message box on top of main form is also a dialog. Main form is also "
+"considered a dialog by pywinauto."
+msgstr ""
+
+#: ../../HowTo.txt:13
+msgid ""
+"A control is GUI element at any level of a hierarchy. This definition "
+"includes window, button, edit box, grid, grid cell, bar etc."
+msgstr ""
+
+#: ../../HowTo.txt:15
+msgid ""
+"Win32 API technology (\"win32\" backend in pywinauto) provides an "
+"identifier for every control. This is a unique integer called **handle**."
+msgstr ""
+
+#: ../../HowTo.txt:17
+msgid ""
+"UI Automation API (\"uia\" backend in pywinauto) may not provide window "
+"**handle** for every GUI element. Such an element is not visible to "
+"\"win32\" backend. But ``Inspect.exe`` can show property "
+"``NativeWindowHandle`` if it's available."
+msgstr ""
+
+#: ../../HowTo.txt:24
+msgid "How to specify a usable Application instance"
+msgstr ""
+
+#: ../../HowTo.txt:25
+msgid ""
+"An ``Application()`` instance is the point of contact for all work with "
+"the application you are automating. So the Application instance needs to "
+"be connected to a process. There are two ways of doing this:"
+msgstr ""
+
+#: ../../HowTo.txt:33
+msgid "or:"
+msgstr ""
+
+#: ../../HowTo.txt:39
+msgid ""
+"``start()`` is used when the application is not running and you need to "
+"start it. Use it in the following way:"
+msgstr ""
+
+#: ../../HowTo.txt:46
+msgid ""
+"The timeout parameter is optional, it should only be necessary to use if "
+"the application takes a long time to start up."
+msgstr ""
+
+#: ../../HowTo.txt:49
+msgid ""
+"``connect()`` is used when the application to be automated is already "
+"launched. To specify an already running application you need to specify "
+"one of the following:"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "process"
+msgstr ""
+
+#: ../../HowTo.txt:53
+msgid "the process id of the application, e.g."
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "handle"
+msgstr ""
+
+#: ../../HowTo.txt:60
+msgid "The windows handle of a window of the application, e.g."
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "path"
+msgstr ""
+
+#: ../../HowTo.txt:67
+msgid ""
+"The path of the executable of the process (``GetModuleFileNameEx`` is "
+"used to find the path of each process and compared against the value "
+"passed in)  e.g."
+msgstr ""
+
+#: ../../HowTo.txt:76
+msgid ""
+"or any combination of the parameters that specify a window, these get "
+"passed to the :func:`pywinauto.findwindows.find_elements()` function.  "
+"e.g."
+msgstr ""
+
+#: ../../HowTo.txt:84
+msgid ""
+"**Note**: The application has to be ready before you can use connect*(). "
+"There is no timeout or retries like there is when finding the application"
+" after start(). So if you start the application outside of pywinauto you "
+"need to either sleep or program a wait loop to wait until the application"
+" has fully started."
+msgstr ""
+
+#: ../../HowTo.txt:92
+msgid "How to specify a dialog of the application"
+msgstr ""
+
+#: ../../HowTo.txt:93
+msgid ""
+"Once the application instance knows what application it is connected to a"
+" dialog to work on needs to be specified."
+msgstr ""
+
+#: ../../HowTo.txt:96
+msgid ""
+"There are many different ways of doing this. The most common will be "
+"using item or attribute access to select a dialog based on it's title. "
+"e.g"
+msgstr ""
+
+#: ../../HowTo.txt:103
+msgid "or equivalently"
+msgstr ""
+
+#: ../../HowTo.txt:109
+msgid "The next easiest method is to ask for the ``top_window()`` e.g."
+msgstr ""
+
+#: ../../HowTo.txt:115
+msgid ""
+"This will return the window that has the highest Z-Order of the top-level"
+" windows of the application."
+msgstr ""
+
+#: ../../HowTo.txt:118
+msgid ""
+"**Note**: This is currently fairly untested so I am not sure it will "
+"return the correct window. It will definitely be a top level window of "
+"the application - it just might not be the one highest in the Z-Order."
+msgstr ""
+
+#: ../../HowTo.txt:122
+msgid ""
+"If this is not enough control then you can use the same parameters as can"
+" be passed to ``findwindows.find_windows()`` e.g."
+msgstr ""
+
+#: ../../HowTo.txt:129
+msgid "Finally to have the most control you can use"
+msgstr ""
+
+#: ../../HowTo.txt:135
+msgid ""
+"this will return a list of all the visible, enabled, top level windows of"
+" the application. You can then use some of the methods in ``handleprops``"
+" module select the dialog you want. Once you have the handle you need "
+"then use"
+msgstr ""
+
+#: ../../HowTo.txt:144
+msgid ""
+"**Note**: If the title of the dialog is very long - then attribute access"
+" might be very long to type, in those cases it is usually easier to use"
+msgstr ""
+
+#: ../../HowTo.txt:154
+msgid "How to specify a control on a dialog"
+msgstr ""
+
+#: ../../HowTo.txt:156
+msgid "There are a number of ways to specify a control, the simplest are"
+msgstr ""
+
+#: ../../HowTo.txt:164
+msgid ""
+"The 2nd is better for non English OS's where you need to pass unicode "
+"strings e.g. ``app[u'your dlg title'][u'your ctrl title']``"
+msgstr ""
+
+#: ../../HowTo.txt:167
+msgid ""
+"The code builds up multiple identifiers for each control from the "
+"following:"
+msgstr ""
+
+#: ../../HowTo.txt:169
+msgid "title"
+msgstr ""
+
+#: ../../HowTo.txt:170 ../../HowTo.txt:177
+msgid "friendly class"
+msgstr ""
+
+#: ../../HowTo.txt:171
+msgid "title + friendly class"
+msgstr ""
+
+#: ../../HowTo.txt:173
+msgid ""
+"If the control's title text is empty (after removing non char characters)"
+" this text is not used. Instead we look for the closest title text above "
+"and to the right of the control. And append the friendly class. So the "
+"list becomes"
+msgstr ""
+
+#: ../../HowTo.txt:178
+msgid "closest text + friendly class"
+msgstr ""
+
+#: ../../HowTo.txt:180
+msgid ""
+"Once a set of identifiers has been created for all controls in the dialog"
+" we disambiguate them."
+msgstr ""
+
+#: ../../HowTo.txt:183
+msgid "use the `WindowSpecification.print_control_identifiers()` method"
+msgstr ""
+
+#: ../../HowTo.txt:188 ../../HowTo.txt:440
+msgid "e.g."
+msgstr ""
+
+#: ../../HowTo.txt:248
+msgid "Sample output"
+msgstr ""
+
+#: ../../HowTo.txt:250
+msgid "This example has been taken from test_application.py"
+msgstr ""
+
+#: ../../HowTo.txt:252
+msgid ""
+"**Note** The identifiers printed by this method have been run through the"
+" process that makes the identifier unique. So if you have two edit boxes,"
+" they will both have \"Edit\" listed in their identifiers. In reality "
+"though the first one can be refered to as \"Edit\", \"Edit0\", \"Edit1\" "
+"and the 2nd should be refered to as \"Edit2\""
+msgstr ""
+
+#: ../../HowTo.txt:258
+msgid ""
+"**Note** You do not have to be exact!. Say we take an instance from the "
+"example above"
+msgstr ""
+
+#: ../../HowTo.txt:266
+msgid "Let's say that you don't like any of these"
+msgstr ""
+
+#: ../../HowTo.txt:268
+msgid "``GroupBox`` - too generic, it could be any group box"
+msgstr ""
+
+#: ../../HowTo.txt:269
+msgid ""
+"``Marginsinches`` and ``MarginsinchesGroupBox`` - these just don' look "
+"right, it would be nicer to leave out the 'inches' part"
+msgstr ""
+
+#: ../../HowTo.txt:272
+msgid ""
+"Well you CAN! The code does a best match on the identifer you use against"
+" all the available identifiers in the dialog."
+msgstr ""
+
+#: ../../HowTo.txt:275
+msgid ""
+"For example if you break into the debugger you can see how different "
+"identifiers can be used"
+msgstr ""
+
+#: ../../HowTo.txt:286
+msgid ""
+"And this will also cater for typos. Though you still have to be careful "
+"as if there are 2 similar identifiers in the dialog the typo you have "
+"used might be more similar to another control then the one you were "
+"thinking of."
+msgstr ""
+
+#: ../../HowTo.txt:292
+msgid "How to use pywinauto with application languages other than English"
+msgstr ""
+
+#: ../../HowTo.txt:293
+msgid ""
+"Because Python does not support unicode identifiers in code you cannot "
+"use attribute access to reference a control so you would either have to "
+"use item access or make an explicit calls to ``window()``."
+msgstr ""
+
+#: ../../HowTo.txt:298
+msgid "So instead of writing"
+msgstr ""
+
+#: ../../HowTo.txt:304
+msgid "You would have to write"
+msgstr ""
+
+#: ../../HowTo.txt:310
+msgid "Or use ``window()`` explictly"
+msgstr ""
+
+#: ../../HowTo.txt:316
+msgid "To see an example of this check ``examples\\misc_examples.py get_info()``"
+msgstr ""
+
+#: ../../HowTo.txt:321
+msgid ""
+"How to deal with controls that do not respond as expected (e.g. OwnerDraw"
+" Controls)"
+msgstr ""
+
+#: ../../HowTo.txt:322
+msgid ""
+"Some controls (especially Ownerdrawn controls) do not respond to events "
+"as expected. For example if you look at any HLP file and go to the Index "
+"Tab (click 'Search' button) you will see a listbox. Running Spy or "
+"Winspector on this will show you that it is indeed a list box - but it is"
+" ownerdrawn. This means that the developer has told Windows that they "
+"will override how items are displayed and do it themselves. And in this "
+"case they have made it so that strings cannot be retrieved :-(."
+msgstr ""
+
+#: ../../HowTo.txt:330
+msgid "So what problems does this cause?"
+msgstr ""
+
+#: ../../HowTo.txt:338
+msgid ""
+"Will return a list of empty strings, all this means is that pywinauto has"
+" not been able to get the strings in the listbox"
+msgstr ""
+
+#: ../../HowTo.txt:341
+msgid ""
+"This will fail with an IndexError because the select(string) method of a "
+"ListBox looks for the item in the Texts to know the index of the item "
+"that it should select."
+msgstr ""
+
+#: ../../HowTo.txt:344
+msgid "The following workaround will work on this control"
+msgstr ""
+
+#: ../../HowTo.txt:350
+msgid ""
+"This will select the 2nd item in the listbox, because it is not a string "
+"lookup it works correctly."
+msgstr ""
+
+#: ../../HowTo.txt:353
+msgid ""
+"Unfortunately not even this will always work. The developer can make it "
+"so that the control does not respond to standard events like Select. In "
+"this case the only way you can select items in the listbox is by using "
+"the keyboard simulation of TypeKeys()."
+msgstr ""
+
+#: ../../HowTo.txt:357
+msgid ""
+"This allows you to send any keystrokes to a control. So to select the 3rd"
+" item you would use"
+msgstr ""
+
+#: ../../HowTo.txt:365
+msgid "``{HOME}`` will make sure that the first item is highlighted."
+msgstr ""
+
+#: ../../HowTo.txt:366
+msgid "``{DOWN 2}`` will then move the highlight down two items"
+msgstr ""
+
+#: ../../HowTo.txt:367
+msgid "``{ENTER}`` will select the highlighted item"
+msgstr ""
+
+#: ../../HowTo.txt:369
+msgid ""
+"If your application made an extensive use of a similar control type then "
+"you could make using it easier by deriving a new class from ListBox, that"
+" could use extra knowledge about your particular application. For example"
+" in the WinHelp example every time an item is highlighted in the list "
+"view, its text is inserted into the Edit control above the list, and you "
+"CAN get the text of the item from there e.g."
+msgstr ""
+
+#: ../../HowTo.txt:383
+msgid "How to Access the System Tray (aka SysTray, aka 'Notification Area')"
+msgstr ""
+
+#: ../../HowTo.txt:384
+msgid ""
+"Near the clock there are icons representing running applications, this "
+"area is normally referred to as the \"System Tray\". In fact, there are "
+"many different windows/controls in this area. The control that contains "
+"the icons is actually a toolbar. It is a child of Pager control within a "
+"window with a class TrayNotifyWnd, which is inside another window with a "
+"class Shell_TrayWnd and all these windows are part of the running "
+"Explorer instance. Thankfully you don't need to remember all that :-)."
+msgstr ""
+
+#: ../../HowTo.txt:392
+msgid ""
+"The thing that is important to remember is that you are looking for a "
+"window in the \"Explorer.exe\" application with the class "
+"\"Shell_TrayWnd\" that has Toolbar control with a title \"Notification "
+"Area\"."
+msgstr ""
+
+#: ../../HowTo.txt:396
+msgid "One way to get this is to do the following"
+msgstr ""
+
+#: ../../HowTo.txt:404
+msgid "The taskbar module provides very preliminary access to the System Tray."
+msgstr ""
+
+#: ../../HowTo.txt:406
+msgid "It defines the following variables:"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "explorer_app"
+msgstr ""
+
+#: ../../HowTo.txt:408
+msgid ""
+"defines an Application() object connected to the running explorer. You "
+"probably don't need to use it directly very much."
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "TaskBar"
+msgstr ""
+
+#: ../../HowTo.txt:411
+msgid ""
+"The handle to the task bar (the bar containing Start Button, the "
+"QuickLaunch icons, running tasks, etc"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "StartButton"
+msgstr ""
+
+#: ../../HowTo.txt:413
+msgid "\"Start me up\" :-) I think you might know what this is!"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "QuickLaunch"
+msgstr ""
+
+#: ../../HowTo.txt:414
+msgid "The Toolbar with the quick launch icons"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "SystemTray"
+msgstr ""
+
+#: ../../HowTo.txt:415
+msgid "The window that contains the Clock and System Tray Icons"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "Clock"
+msgstr ""
+
+#: ../../HowTo.txt:416
+msgid "The clock"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "SystemTrayIcons"
+msgstr ""
+
+#: ../../HowTo.txt:417
+msgid "The toolbar representing the system tray icons"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "RunningApplications"
+msgstr ""
+
+#: ../../HowTo.txt:418
+msgid "The toolbar representing the running applications"
+msgstr ""
+
+#: ../../HowTo.txt:420
+msgid ""
+"I have also provided two functions in the module that can be used to "
+"click on system tray icons:"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "``ClickSystemTrayIcon(button)``"
+msgstr ""
+
+#: ../../HowTo.txt:423
+msgid ""
+"You can use this to left click a visible icon in the system tray. I had "
+"to specifically say visible icon as there may be many invisible icons "
+"that obviously cannot be clicked. Button can be any integer. If you "
+"specify 3 then it will find and click the 3rd visible button. (Almost no "
+"error checking is performed now here but this method will more than "
+"likely be moved/renamed in the future.)"
+msgstr ""
+
+#: ../../HowTo.txt
+msgid "``RightClickSystemTrayIcon(button)``"
+msgstr ""
+
+#: ../../HowTo.txt:432
+msgid "Similar to ``ClickSytemTrayIcon`` but performs a right click."
+msgstr ""
+
+#: ../../HowTo.txt:436
+msgid ""
+"Often, when you click/right click on an icon, you get a popup menu. The "
+"thing to remember at this point is that the popup menu is a part of the "
+"application being automated not part of explorer."
+msgstr ""
+
+#: ../../HowTo.txt:456
+msgid "COM Threading Model"
+msgstr ""
+
+#: ../../HowTo.txt:457
+msgid ""
+"By default, pywinauto sets up the client Multithreading COM model (MTA) "
+"on init if no other model was defined prior to import of pywinauto. The "
+"model can be set up by another imported module implicitly or specified "
+"explicitly through ``sys.coinit_flags``."
+msgstr ""
+
+#: ../../HowTo.txt:461
+msgid ""
+"Example for overriding MTA by setting the single threaded appartment "
+"model explicitly."
+msgstr ""
+
+#: ../../HowTo.txt:471
+msgid ""
+"Notice that the final value of COM model is assigned back to "
+"``sys.coinit_flags``. This is to avoid conflicts with other modules. "
+"Possible values for ``sys.coinit_flags``:"
+msgstr ""
+
+#: ../../HowTo.txt:474
+msgid "``0`` - Multi-Threaded Apartment model (MTA)"
+msgstr ""
+
+#: ../../HowTo.txt:475
+msgid "``2`` - Single-Threaded Apartment model (STA)"
+msgstr ""
+
+#: ../../HowTo.txt:477
+msgid "More info:"
+msgstr ""
+
+#: ../../HowTo.txt:479
+msgid ""
+"About Microsoft COM threading models: `Understanding and Using COM "
+"Threading Models`_"
+msgstr ""
+
+#: ../../HowTo.txt:480
+msgid "Internal discussion_ on pywinauto MTA."
+msgstr ""
+

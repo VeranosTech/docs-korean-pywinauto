@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.missingextrastring.txt:2
+msgid "pywinauto.tests.missingextrastring"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:1
+msgid "Different number of special character sequences Test"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:3
+msgid ""
+"**What is checked** This test checks to make sure that certain special "
+"character sequences appear the in the localised if they appear in the "
+"reference title strings. These strings usually mean something to the user"
+" but the software internally does not care if they exist or not. The list"
+" that is currently checked is: \">>\", \">\", \"<<\", \"<\", "
+"\":\"(colon), \"...\", \"&&\", \"&\", \"\""
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:10
+msgid ""
+"**How is it checked** For each of the string to check for we make sure "
+"that if it appears in the reference that it also appears in the localised"
+" title."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:18
+msgid "**When is a bug reported**"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:15
+msgid ""
+"If the reference has one of the text strings but the localised does not a"
+" bug is reported."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:17
+msgid ""
+"If the localised has one of the text strings but the reference does not a"
+" bug is reported."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:20
+msgid "Bug Extra Information The bug contains the following extra information"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:23
+msgid ""
+"**MissingOrExtra**      Whether the characters are missing or extra from "
+"the controls being check as compared to the reference, (String with "
+"following possible values)"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:27
+msgid ""
+"\"MissingCharacters\"  The characters are in the reference but not in the"
+" localised."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:29
+msgid ""
+"\"ExtraCharacters\"    The characters are not in the reference but are in"
+" the localised."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:32
+msgid "**MissingOrExtraText**  What character string is missing or added, String"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:34
+msgid ""
+"**Is Reference dialog needed** This test will not run if the reference "
+"controls are not available."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:37
+msgid ""
+"**False positive bug reports** Currently this test is at a beta stage "
+"filtering of the results is probably necessary at the moment."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:41
+msgid ""
+"**Test Identifier** The identifier for this test/bug is "
+"\"MissingExtraString\""
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring.MissingExtraStringTest:1
+msgid "Return the errors from running the test"
+msgstr ""
+

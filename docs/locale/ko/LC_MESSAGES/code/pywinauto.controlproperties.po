@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.controlproperties.txt:2
+msgid "pywinauto.controlproperties"
+msgstr ""
+
+#: of pywinauto.controlproperties:1
+msgid "Wrap"
+msgstr ""
+
+#: of pywinauto.controlproperties.ControlProps:1
+msgid "Wrap controls read from a file to resemble hwnd controls"
+msgstr ""
+
+#: of pywinauto.controlproperties.FuncWrapper:1
+msgid "Little class to allow attribute access to return a callable object"
+msgstr ""
+
+#: of pywinauto.controlproperties.MenuItemAsControl:1
+msgid "Make a menu item look like a control for tests"
+msgstr ""
+
+#: of pywinauto.controlproperties.SetReferenceControls:1
+msgid "Set the reference controls for the controls passed in"
+msgstr ""
+
+#: of pywinauto.controlproperties.SetReferenceControls:5
+msgid "This does some minor checking as following:"
+msgstr ""
+
+#: of pywinauto.controlproperties.SetReferenceControls:4
+msgid ""
+"test that there are the same number of reference controls as controls - "
+"fails with an exception if there are not"
+msgstr ""
+
+#: of pywinauto.controlproperties.SetReferenceControls:6
+msgid "test if all the ID's are the same or not"
+msgstr ""
+

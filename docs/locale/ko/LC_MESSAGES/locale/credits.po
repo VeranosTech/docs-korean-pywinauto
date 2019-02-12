@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../credits.txt:2
+msgid "Credits"
+msgstr ""
+
+#: ../../credits.txt:3
+msgid "(listed in reverse chronological order)"
+msgstr ""
+
+#: ../../credits.txt:5
+msgid ""
+"Vasily Ryabov, Valentin Kroupkin, Alexander Rumyantsev - MS UI Automation"
+" backend implementation"
+msgstr ""
+
+#: ../../credits.txt:7
+msgid "Ivan Magazinnik - mouse/keyboard input emulation on Linux"
+msgstr ""
+
+#: ../../credits.txt:9
+msgid "Maxim Samokhvalov - initial implementation of win32_hooks module"
+msgstr ""
+
+#: ../../credits.txt:11
+msgid ""
+"Intel Corporation - Vasily Ryabov revived and maintained the project "
+"during his work at Intel (pywinauto 0.5.x)"
+msgstr ""
+
+#: ../../credits.txt:13
+msgid ""
+"Valentin Kroupkin (airelil) - continuous integration (AppVeyor), many "
+"unit tests improvements (pywinauto 0.5.x)"
+msgstr ""
+
+#: ../../credits.txt:15
+msgid "Michael Herrmann - bug fixes, project maintenance (0.4.x)"
+msgstr ""
+
+#: ../../credits.txt:17
+msgid "Raghav - idea with using metaclass for finding wrapper"
+msgstr ""
+
+#: ../../credits.txt:19
+msgid ""
+"Daisuke Yamashita - Bugs/suggestions for 2.5 that "
+"MenuWrapper.GetProperties() returns a list rather then a dict"
+msgstr ""
+
+#: ../../credits.txt:21
+msgid ""
+"Dalius Dobravolskas - Help on the forums and prompted major improvements "
+"on the wait* functionality"
+msgstr ""
+
+#: ../../credits.txt:23
+msgid "Jeff Winkler - Early encouragement, creation of screencasts"
+msgstr ""
+
+#: ../../credits.txt:25
+msgid "Stefaan Himpe - Lots of speed and stability improvements early on"
+msgstr ""
+

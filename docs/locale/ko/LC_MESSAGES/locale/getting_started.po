@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../getting_started.txt:3
+msgid "Getting Started Guide"
+msgstr ""
+
+#: ../../getting_started.txt:5
+msgid ""
+"Once you have installed pywinauto - how do you get going? The very first "
+"necessary thing is to determine which accessibility technology "
+"(pywinauto's backend) could be used for your application."
+msgstr ""
+
+#: ../../getting_started.txt:9
+msgid "The list of supported accessibility technologies on Windows:"
+msgstr ""
+
+#: ../../getting_started.txt:12
+msgid "**Win32 API** (``backend=\"win32\"``) - a default backend for now"
+msgstr ""
+
+#: ../../getting_started.txt:12
+msgid "MFC, VB6, VCL, simple WinForms controls and most of the old legacy apps"
+msgstr ""
+
+#: ../../getting_started.txt:19
+msgid "**MS UI Automation** (``backend=\"uia\"``)"
+msgstr ""
+
+#: ../../getting_started.txt:15
+msgid "WinForms, WPF, Store apps, Qt5, browsers"
+msgstr ""
+
+#: ../../getting_started.txt:17
+msgid ""
+"Notes: Chrome requires ``--force-renderer-accessibility`` cmd flag before"
+" starting. Custom properties and controls are not supported because of "
+"comtypes Python library restrictions."
+msgstr ""
+
+#: ../../getting_started.txt:21
+msgid ""
+"AT SPI on Linux and Apple Accessibility API are in the long term plans so"
+" far."
+msgstr ""
+
+#: ../../getting_started.txt:25
+msgid "GUI Objects Inspection / Spy Tools"
+msgstr ""
+
+#: ../../getting_started.txt:26
+msgid ""
+"If you're still not sure which backend is most appropriate for you then "
+"try using object inspection / spy tools that are available for free: "
+"download them from GitHub repo gui-inspect-tool_."
+msgstr ""
+
+#: ../../getting_started.txt:32
+msgid ""
+"**Spy++** is included into MS Visual Studio distribution (even Express or"
+" Community) and is accessible through Start menu. It uses Win32 API. It "
+"means if Spy++ can show all the controls the ``\"win32\"`` backend is "
+"what you need. *AutoIt Window Info* tool is a kind of Spy++ clone."
+msgstr ""
+
+#: ../../getting_started.txt:38
+msgid ""
+"**Inspect.exe** is another great tool created by Microsoft. It's included"
+" into Windows SDK so that it can be found in the following location on "
+"x64 Windows: ::"
+msgstr ""
+
+#: ../../getting_started.txt:44
+msgid ""
+"Switch Inspect.exe into **UIA mode** (using MS UI Automation). If it can "
+"show more controls and their properties than Spy++, probably the "
+"``\"uia\"`` backend is your choice."
+msgstr ""
+
+#: ../../getting_started.txt:48
+msgid ""
+"`py_inspect`_ is a prototype of multi-backend spy tool based on "
+"pywinauto. Switching between available backends can show you a difference"
+" in hierarchies with \"win32\" and \"uia\" backends. **py_inspect** is a "
+"future replacement of `SWAPY`_ which supports \"win32\" backend only at "
+"the moment when pywinauto==0.5.4 was out. Initial implementation of "
+"py_inspect contains just about 150 lines of code thanks to modern "
+"pywinauto 0.6.0+ architecture."
+msgstr ""
+
+#: ../../getting_started.txt:58
+msgid ""
+"If some or all controls are not visible to all the inspection tools it's "
+"still possible to control the application by generating mouse and "
+"keyboard events using basic modules mouse_ and keyboard_."
+msgstr ""
+
+#: ../../getting_started.txt:67
+msgid "Entry Points for Automation"
+msgstr ""
+
+#: ../../getting_started.txt:69
+msgid ""
+"So you have an application, you know it supports one of the mentioned "
+"accessibility technologies. What's the next?"
+msgstr ""
+
+#: ../../getting_started.txt:72
+msgid ""
+"First you should start your application or connect to an existing app "
+"instance. It can be done with an ``Application`` object. This is not just"
+" a clone of ``subprocess.Popen``, but an entry point for further "
+"automation limiting all the scope by process boundaries. It's useful to "
+"control potentially few instances of an application (you work with one "
+"instance not bothering another ones)."
+msgstr ""
+
+#: ../../getting_started.txt:89
+msgid ""
+"If you want to navigate across process boundaries (say Win10 Calculator "
+"surprisingly draws its widgets in more than one process) your entry point"
+" is a ``Desktop`` object."
+msgstr ""
+
+#: ../../getting_started.txt:102
+msgid ""
+"**Application** and **Desktop** objects are both backend-specific. No "
+"need to use backend name in further actions explicitly."
+msgstr ""
+
+#: ../../getting_started.txt:107
+msgid "Window Specification"
+msgstr ""
+
+#: ../../getting_started.txt:109
+msgid ""
+"It's a core concept for the high level pywinauto API. You are able to "
+"describe any window or control approximately or in more details even if "
+"it doesn't exist yet or already closed. Window specification also keeps "
+"information about matching/search algorithm that will be used to get a "
+"real window or control."
+msgstr ""
+
+#: ../../getting_started.txt:114
+msgid "Let's create a detailed window specification:"
+msgstr ""
+
+#: ../../getting_started.txt:126
+msgid ""
+"Actual window lookup is performed by ``wrapper_object()`` method. It "
+"returns some wrapper for the real existing window/control or raises "
+"``ElementNotFoundError``. This wrapper can deal with the window/control "
+"by sending actions or retrieving data."
+msgstr ""
+
+#: ../../getting_started.txt:130
+msgid ""
+"But Python can hide this ``wrapper_object()`` call so that you have more "
+"compact code in production. The following statements do absolutely the "
+"same:"
+msgstr ""
+
+#: ../../getting_started.txt:138
+msgid ""
+"There are many possible criteria for creating window specifications. "
+"These are just a few examples."
+msgstr ""
+
+#: ../../getting_started.txt:150
+msgid ""
+"The list of possible criteria can be found in the "
+":func:`pywinauto.findwindows.find_elements()` function."
+msgstr ""
+
+#: ../../getting_started.txt:155
+msgid "Attribute Resolution Magic"
+msgstr ""
+
+#: ../../getting_started.txt:157
+msgid ""
+"Python simplifies creating window specification by resolving object "
+"attributes dynamically. But an attibute name has the same limitations as "
+"any variable name: no spaces, commas and other special symbols. But "
+"fortunately pywinauto uses \"best match\" algorithm to make a lookup "
+"resistant to typos and small variations."
+msgstr ""
+
+#: ../../getting_started.txt:169
+msgid ""
+"Unicode characters and special symbols usage is possible through an item "
+"access in a dictionary like manner."
+msgstr ""
+
+#: ../../getting_started.txt:180
+msgid "How to know magic attribute names"
+msgstr ""
+
+#: ../../getting_started.txt:182
+msgid ""
+"There are several principles how \"best match\" gold names are attached "
+"to the controls. So if a window specification is close to one of these "
+"names you will have a successful name matching."
+msgstr ""
+
+#: ../../getting_started.txt:186
+msgid "By title (window text, name): ``app.Properties.OK.click()``"
+msgstr ""
+
+#: ../../getting_started.txt:187
+msgid "By title and control type: ``app.Properties.OKButton.click()``"
+msgstr ""
+
+#: ../../getting_started.txt:188
+msgid ""
+"By control type and number: ``app.Properties.Button3.click()`` (*Note*: "
+"Button0 and Button1 match the same button, Button2 is the next etc.)"
+msgstr ""
+
+#: ../../getting_started.txt:190
+msgid ""
+"By top-left label and control type: "
+"``app.OpenDialog.FileNameEdit.set_text(\"\")``"
+msgstr ""
+
+#: ../../getting_started.txt:191
+msgid ""
+"By control type and item text: "
+"``app.Properties.TabControlSharing.select(\"General\")``"
+msgstr ""
+
+#: ../../getting_started.txt:193
+msgid ""
+"Often not all of these matching names are available simultaneously. To "
+"check these names for specified dialog you can use "
+"``print_control_identifiers()`` method. Possible \"best_match\" names are"
+" displayed as a Python list for every control in a tree. More detailed "
+"window specification can also be just copied from the method output. Say "
+"``app.Properties.child_window(title=\"Contains:\", auto_id=\"13087\", "
+"control_type=\"Edit\")``."
+msgstr ""
+
+#: ../../getting_started.txt:347
+msgid "Look at the examples"
+msgstr ""
+
+#: ../../getting_started.txt:349
+msgid ""
+"The following examples are included: **Note**: Examples are language "
+"dependent - they will only work on the language of product that they were"
+" programmed for. All examples have been programmed for English Software "
+"except where highlighted."
+msgstr ""
+
+#: ../../getting_started.txt:354
+msgid "``mspaint.py``         Control MSPaint"
+msgstr ""
+
+#: ../../getting_started.txt:355
+msgid "``notepad_fast.py``    Use fast timing settings to control Notepad"
+msgstr ""
+
+#: ../../getting_started.txt:356
+msgid "``notepad_slow.py``    Use slow timing settings to control Notepad"
+msgstr ""
+
+#: ../../getting_started.txt:357
+msgid ""
+"``notepad_item.py``    Use item rather then attribute access to control "
+"Notepad."
+msgstr ""
+
+#: ../../getting_started.txt:358
+msgid ""
+"``misc_examples.py``    Show some exceptions and how to get control "
+"identifiers."
+msgstr ""
+
+#: ../../getting_started.txt:359
+msgid "``save_from_internet_explorer.py`` Save a Web Page from Internet Explorer."
+msgstr ""
+
+#: ../../getting_started.txt:360
+msgid "``save_from_firefox.py``  Save a Web Page from Firefox."
+msgstr ""
+
+#: ../../getting_started.txt:361
+msgid ""
+"``get_winrar_info.py``    Example of how to do multilingual automation. "
+"This is not an ideal example (works on French, Czech and German WinRar)"
+msgstr ""
+
+#: ../../getting_started.txt:363
+msgid ""
+"``forte_agent_sample.py``   Example of dealing with a complex application"
+" that is quite dynamic and gives different dialogs often when starting."
+msgstr ""
+
+#: ../../getting_started.txt:365
+msgid ""
+"``windowmediaplayer.py``  Just another example - deals with check boxes "
+"in a ListView."
+msgstr ""
+
+#: ../../getting_started.txt:367
+msgid ""
+"``test_sakura.py``, ``test_sakura2.py``    Two examples of automating a "
+"Japanase product."
+msgstr ""
+
+#: ../../getting_started.txt:370
+msgid "Automate notepad at the command line"
+msgstr ""
+
+#: ../../getting_started.txt:372
+msgid "Please find below a sample run ::"
+msgstr ""
+
+#: ../../getting_started.txt:444
+msgid ""
+"Import the pywinauto.application module (usually the only module you need"
+" to import directly)"
+msgstr ""
+
+#: ../../getting_started.txt:446
+msgid ""
+"Create an Application instance. All access to the application is done "
+"through this object."
+msgstr ""
+
+#: ../../getting_started.txt:448
+msgid ""
+"We have created an Application instance in step 2 but we did not supply "
+"any information on the Windows application it referred to. By using the "
+"start() method we execute that application and connect it to the "
+"Application instance app."
+msgstr ""
+
+#: ../../getting_started.txt:452
+msgid ""
+"Draw a green rectangle around the Notepad dialog - so that we know we "
+"have the correct window."
+msgstr ""
+
+#: ../../getting_started.txt:454
+msgid ""
+"Select the Replace item from the Edit Menu on the Notepad Dialog of the "
+"application that app is connected to. This action will make the Replace "
+"dialog appear."
+msgstr ""
+
+#: ../../getting_started.txt:457
+msgid ""
+"Print the identifiers for the controls on the Replace dialog, for example"
+" the 1st edit control on the Replace dialog can be referred to by any of "
+"the following identifiers::"
+msgstr ""
+
+#: ../../getting_started.txt:466
+msgid ""
+"The last is the one that gives the user reading the script aftewards the "
+"best idea of what the script does."
+msgstr ""
+
+#: ../../getting_started.txt:468
+msgid ""
+"Close the Replace dialog. (In a script file it is safer to use "
+"close_click() rather than click() because close_click() waits a little "
+"longer to give windows time to close the dialog.)"
+msgstr ""
+
+#: ../../getting_started.txt:471
+msgid ""
+"Let's type some text into the Notepad text area. Without the "
+"``with_spaces`` argument spaces would not be typed. Please see "
+"documentation for SendKeys for this method as it is a thin wrapper around"
+" SendKeys."
+msgstr ""
+
+#: ../../getting_started.txt:474
+msgid "Ask to exit Notepad"
+msgstr ""
+
+#: ../../getting_started.txt:475
+msgid "We will be asked if we want to save - click on the \"No\" button."
+msgstr ""
+

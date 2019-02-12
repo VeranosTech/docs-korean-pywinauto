@@ -1,0 +1,1621 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/code.txt:3
+msgid "Basic User Input Modules"
+msgstr ""
+
+#: ../../code/code.txt:11
+msgid "Main User Modules"
+msgstr ""
+
+#: ../../code/code.txt:21
+msgid "Specific Functionality"
+msgstr ""
+
+#: ../../code/code.txt:30
+msgid "Controls Reference"
+msgstr ""
+
+#: ../../code/code.txt:44
+msgid "Pre-supplied Tests"
+msgstr ""
+
+#: ../../code/code.txt:62
+msgid "Backend Internal Implementation modules"
+msgstr ""
+
+#: ../../code/code.txt:75
+msgid "Internal Modules"
+msgstr ""
+
+#: ../../code/pywinauto.actionlogger.txt:2
+msgid "pywinauto.actionlogger"
+msgstr ""
+
+#: of pywinauto.actionlogger.disable:1
+msgid "Disable pywinauto logging actions"
+msgstr ""
+
+#: of pywinauto.actionlogger.enable:1
+msgid "Enable pywinauto logging actions"
+msgstr ""
+
+#: of pywinauto.actionlogger.reset_level:1
+msgid "Reset a logging level to a default"
+msgstr ""
+
+#: of pywinauto.actionlogger.set_level:1
+msgid "Set a logging level for the pywinauto logger."
+msgstr ""
+
+#: ../../code/pywinauto.application.txt:2
+msgid "pywinauto.application module"
+msgstr ""
+
+#: ../../code/pywinauto.backend.txt:2
+msgid "pywinauto.backend"
+msgstr ""
+
+#: ../../code/pywinauto.base_wrapper.txt:2
+msgid "pywinauto.base_wrapper"
+msgstr ""
+
+#: ../../code/pywinauto.clipboard.txt:2
+msgid "pywinauto.clipboard"
+msgstr ""
+
+#: ../../code/pywinauto.controlproperties.txt:2
+msgid "pywinauto.controlproperties"
+msgstr ""
+
+#: of pywinauto.controlproperties:1
+msgid "Wrap"
+msgstr ""
+
+#: of pywinauto.controlproperties.ControlProps:1
+msgid "Wrap controls read from a file to resemble hwnd controls"
+msgstr ""
+
+#: of pywinauto.controlproperties.FuncWrapper:1
+msgid "Little class to allow attribute access to return a callable object"
+msgstr ""
+
+#: of pywinauto.controlproperties.MenuItemAsControl:1
+msgid "Make a menu item look like a control for tests"
+msgstr ""
+
+#: of pywinauto.controlproperties.SetReferenceControls:1
+msgid "Set the reference controls for the controls passed in"
+msgstr ""
+
+#: of pywinauto.controlproperties.SetReferenceControls:5
+msgid "This does some minor checking as following:"
+msgstr ""
+
+#: of pywinauto.controlproperties.SetReferenceControls:4
+msgid ""
+"test that there are the same number of reference controls as controls - "
+"fails with an exception if there are not"
+msgstr ""
+
+#: of pywinauto.controlproperties.SetReferenceControls:6
+msgid "test if all the ID's are the same or not"
+msgstr ""
+
+#: ../../code/pywinauto.controls.common_controls.txt:2
+msgid "pywinauto.controls.common_controls"
+msgstr ""
+
+#: ../../code/pywinauto.controls.hwndwrapper.txt:2
+msgid "pywinauto.controls.hwndwrapper"
+msgstr ""
+
+#: ../../code/pywinauto.controls.menuwrapper.txt:2
+msgid "pywinauto.controls.menuwrapper"
+msgstr ""
+
+#: ../../code/pywinauto.controls.uia_controls.txt:2
+msgid "pywinauto.controls.uia_controls"
+msgstr ""
+
+#: ../../code/pywinauto.controls.uiawrapper.txt:2
+msgid "pywinauto.controls.uiawrapper"
+msgstr ""
+
+#: ../../code/pywinauto.controls.win32_controls.txt:2
+msgid "pywinauto.controls.win32_controls"
+msgstr ""
+
+#: ../../code/pywinauto.element_info.txt:2
+msgid "pywinauto.element_info"
+msgstr ""
+
+#: of pywinauto.element_info:1
+msgid "Interface for classes which should deal with different backend elements"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo:1
+msgid "Abstract wrapper for an element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.children:1
+msgid "Return children of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.class_name:1
+msgid "Return the class name of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.control_id:1
+msgid "Return the ID of the control"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.descendants:1
+msgid "Return descendants of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.dump_window:1
+msgid "Dump an element to a set of properties"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.enabled:1
+msgid "Return True if the element is enabled"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.filter_with_depth:1
+msgid "Return filtered elements with particular depth level relative to the root"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.framework_id:1
+msgid "Return the framework of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.handle:1
+msgid "Return the handle of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.has_depth:1
+msgid "Return True if element has particular depth level relative to the root"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.iter_children:1
+msgid "Iterate over children of element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.iter_descendants:1
+msgid "Iterate over descendants of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.name:1
+msgid "Return the name of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.parent:1
+msgid "Return the parent of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.process_id:1
+msgid "Return the ID of process that controls this element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.rectangle:1
+msgid "Return rectangle of element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.rich_text:1
+msgid "Return the text of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.set_cache_strategy:1
+msgid "Set a cache strategy for frequently used attributes of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.visible:1
+msgid "Return True if the element is visible"
+msgstr ""
+
+#: ../../code/pywinauto.findbestmatch.txt:2
+msgid "pywinauto.findbestmatch"
+msgstr ""
+
+#: of pywinauto.findbestmatch:1
+msgid "Module to find the closest match of a string in a list"
+msgstr ""
+
+#: of pywinauto.findbestmatch.MatchError:1
+msgid "A suitable match could not be found"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict:1
+msgid "A dictionary subclass that handles making its keys unique"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict.find_best_matches:1
+msgid "Return the best matches for search_text in the items"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict.find_best_matches:3
+msgid "**search_text** the text to look for"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict.find_best_matches:4
+msgid "**clean** whether to clean non text characters out of the strings"
+msgstr ""
+
+#: of pywinauto.findbestmatch.UniqueDict.find_best_matches:5
+msgid "**ignore_case** compare strings case insensitively"
+msgstr ""
+
+#: of pywinauto.findbestmatch.build_unique_dict:1
+msgid "Build the disambiguated list of controls"
+msgstr ""
+
+#: of pywinauto.findbestmatch.build_unique_dict:3
+msgid ""
+"Separated out to a different function so that we can get the control "
+"identifiers for printing."
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_control_matches:1
+msgid "Returns the control that is the the best match to search_text"
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_control_matches:3
+msgid ""
+"This is slightly differnt from find_best_match in that it builds up the "
+"list of text items to search through using information from each control."
+" So for example for there is an OK, Button then the following are all "
+"added to the search list: \"OK\", \"Button\", \"OKButton\""
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_control_matches:9
+msgid ""
+"But if there is a ListView (which do not have visible 'text') then it "
+"will just add \"ListView\"."
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:1
+msgid "Return the item that best matches the search_text"
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:3
+msgid "**search_text** The text to search for"
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:4
+msgid "**item_texts** The list of texts to search through"
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:5
+msgid ""
+"**items** The list of items corresponding (1 to 1) to the list of texts "
+"to search through."
+msgstr ""
+
+#: of pywinauto.findbestmatch.find_best_match:7
+msgid ""
+"**limit_ratio** How well the text has to match the best match. If the "
+"best match matches lower then this then it is not considered a match and "
+"a MatchError is raised, (default = .5)"
+msgstr ""
+
+#: of pywinauto.findbestmatch.get_control_names:1
+msgid "Returns a list of names for this control"
+msgstr ""
+
+#: of pywinauto.findbestmatch.get_non_text_control_name:1
+msgid ""
+"return the name for this control by finding the closest text control "
+"above and to its left"
+msgstr ""
+
+#: of pywinauto.findbestmatch.is_above_or_to_left:1
+msgid "Return true if the other_ctrl is above or to the left of ref_control"
+msgstr ""
+
+#: ../../code/pywinauto.findwindows.txt:2
+msgid "pywinauto.findwindows"
+msgstr ""
+
+#: ../../code/pywinauto.fuzzydict.txt:2
+msgid "pywinauto.fuzzydict"
+msgstr ""
+
+#: of pywinauto.fuzzydict:1
+msgid "Match items in a dictionary using fuzzy matching"
+msgstr ""
+
+#: of pywinauto.fuzzydict:3
+msgid "Implemented for pywinauto."
+msgstr ""
+
+#: of pywinauto.fuzzydict:5
+msgid ""
+"This class uses difflib to match strings. This class uses a linear search"
+" to find the items as it HAS to iterate over every item in the dictionary"
+" (otherwise it would not be possible to know which is the 'best' match)."
+msgstr ""
+
+#: of pywinauto.fuzzydict:10
+msgid ""
+"If the exact item is in the dictionary (no fuzzy matching needed - then "
+"it doesn't do the linear search and speed should be similar to standard "
+"Python dictionaries."
+msgstr ""
+
+#: of pywinauto.fuzzydict.FuzzyDict:1
+msgid "Provides a dictionary that performs fuzzy lookup"
+msgstr ""
+
+#: ../../code/pywinauto.handleprops.txt:2
+msgid "pywinauto.handleprops"
+msgstr ""
+
+#: ../../code/pywinauto.keyboard.txt:2
+msgid "pywinauto.keyboard"
+msgstr ""
+
+#: ../../code/pywinauto.mouse.txt:2
+msgid "pywinauto.mouse"
+msgstr ""
+
+#: ../../code/pywinauto.remote_memory_block.txt:2
+msgid "pywinauto.remote_memory_block"
+msgstr ""
+
+#: ../../code/pywinauto.sysinfo.txt:2
+msgid "pywinauto.sysinfo"
+msgstr ""
+
+#: of pywinauto.sysinfo:1
+msgid "Simple module for checking whether Python and Windows are 32-bit or 64-bit"
+msgstr ""
+
+#: ../../code/pywinauto.tests.allcontrols.txt:2
+msgid "pywinauto.tests.allcontrols"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:1
+msgid "Get All Controls Test"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:3
+msgid ""
+"**What is checked** This test does no actual testing  it just returns "
+"each control."
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:6
+msgid ""
+"**How is it checked** A loop over all the controls in the dialog is made "
+"and each control added to the list of bugs"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:10
+msgid "**When is a bug reported** For each control."
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:13 pywinauto.tests.comboboxdroppedheight:15
+msgid ""
+"**Bug Extra Information** There is no extra information associated with "
+"this bug type"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:16
+msgid ""
+"**Is Reference dialog needed** No,but if available the reference control "
+"will be returned with the localised control."
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:20
+msgid "**False positive bug reports** Not possible"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:23
+msgid "**Test Identifier** The identifier for this test/bug is \"AllControls\""
+msgstr ""
+
+#: of pywinauto.tests.allcontrols.AllControlsTest:1
+#: pywinauto.tests.translation.TranslationTest:1
+msgid "Returns just one bug for each control"
+msgstr ""
+
+#: ../../code/pywinauto.tests.asianhotkey.txt:2
+msgid "pywinauto.tests.asianhotkey"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:1
+msgid "Asian Hotkey Format Test"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:3
+msgid "**What is checked**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:5
+msgid ""
+"This test checks whether the format for shortcuts/hotkeys follows the "
+"standards for localised Windows applications. This format is {localised "
+"text}({uppercase hotkey}) so for example if the English control is "
+"\"&Help\" the localised control for Asian languages should be "
+"\"LocHelp(H)\""
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:13
+msgid "**How is it checked**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:15
+msgid ""
+"After checking whether this control displays hotkeys it examines the 1st "
+"string of the control to make sure that the format is correct. If the "
+"reference control is available then it also makes sure that the hotkey "
+"character is the same as the reference. Controls with a title of less "
+"than 4 characters are ignored. This has been done to avoid false positive"
+" bug reports for strings like \"&X:\"."
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:22 pywinauto.tests.missingextrastring:18
+#: pywinauto.tests.translation:17
+msgid "**When is a bug reported**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:24
+msgid ""
+"A bug is reported when a control has a hotkey and it is not in the "
+"correct format. Also if the reference control is available a bug will be "
+"reported if the hotkey character is not the same as used in the reference"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:29
+msgid "**Bug Extra Information**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:31
+msgid ""
+"This test produces 2 different types of bug: BugType: "
+"\"AsianHotkeyFormat\" There is no extra information associated with this "
+"bug type"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:35
+msgid "**BugType: \"AsianHotkeyDiffRef\"**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:37
+msgid "There is no extra information associated with this bug type"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:39
+msgid "**Is Reference dialog needed**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:41
+msgid ""
+"The reference dialog is not needed. If it is unavailable then only bugs "
+"of type \"AsianHotkeyFormat\" will be reported, bug of type "
+"\"AsianHotkeyDiffRef\" will not be found."
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:45
+msgid "**False positive bug reports**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:47
+msgid ""
+"There should be very few false positive bug reports when testing Asian "
+"software. If a string is very short (eg \"&Y:\") but is padded with "
+"spaces then it will get reported."
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:51
+msgid "**Test Identifier**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:53
+msgid "The identifier for this test/bug is \"AsianHotkeyTests\""
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey.AsianHotkeyTest:1
+#: pywinauto.tests.overlapping.OverlappingTest:1
+#: pywinauto.tests.repeatedhotkey.RepeatedHotkeyTest:1
+msgid "Return the repeated hotkey errors"
+msgstr ""
+
+#: ../../code/pywinauto.tests.comboboxdroppedheight.txt:2
+msgid "pywinauto.tests.comboboxdroppedheight"
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:1
+msgid "ComboBox dropped height Test"
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:3
+msgid ""
+"**What is checked** It is ensured that the height of the list displayed "
+"when the combobox is dropped down is not less than the height of the "
+"reference."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:7
+msgid ""
+"**How is it checked** The value for the dropped rectangle can be "
+"retrieved from windows. The height of this rectangle is calculated and "
+"compared against the reference height."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:11
+msgid ""
+"**When is a bug reported** If the height of the dropped rectangle for the"
+" combobox being checked is less than the height of the reference one then"
+" a bug is reported."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:18
+msgid ""
+"**Is Reference dialog needed** The reference dialog is necessary for this"
+" test."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:21
+msgid ""
+"**False positive bug reports** No false bugs should be reported. If the "
+"font of the localised control has a smaller height than the reference "
+"then it is possible that the dropped rectangle could be of a different "
+"size."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:26
+msgid ""
+"**Test Identifier** The identifier for this test/bug is "
+"\"ComboBoxDroppedHeight\""
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight.ComboBoxDroppedHeightTest:1
+msgid "Check if each combobox height is the same as the reference"
+msgstr ""
+
+#: ../../code/pywinauto.tests.comparetoreffont.txt:2
+msgid "pywinauto.tests.comparetoreffont"
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:1
+msgid "Compare against reference font test"
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:3
+msgid ""
+"**What is checked** This test checks all the parameters of the font for "
+"the control against the font for the reference control. If any value is "
+"different then this is reported as a bug. Here is a list of all the "
+"possible values that are tested: lfFaceName      The name of the font "
+"lfHeight        The height of the font lfWidth         Average width of "
+"characters lfEscapement    Angle of text lfOrientation   Another angle "
+"for the text! lfWeight        How bold the text is lfItalic        If the"
+" font is italic lfUnderline     If the font is underlined lfStrikeOut"
+"     If the font is struck out lfCharSet       The character set of the "
+"font lfOutPrecision  The output precision lfClipPrecision The clipping "
+"precision lfQuality       The output quality lfPitchAndFamily        The "
+"pitch and family"
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:24
+msgid ""
+"**How is it checked** Each property of the font for the control being "
+"tested is compared against the equivalent property of the reference "
+"control font for equality."
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:28
+msgid ""
+"**When is a bug reported** For each property of the font that is not "
+"identical to the reference font a bug is reported. So for example if the "
+"Font Face has changed and the text is bold then (at least) 2 bugs will be"
+" reported."
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:33 pywinauto.tests.miscvalues:21
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description ValueType       What value is incorrect "
+"(see above), String Ref     The reference value converted to a string, "
+"String Loc     The localised value converted to a string, String"
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:40 pywinauto.tests.leadtrailspaces:36
+#: pywinauto.tests.miscvalues:28 pywinauto.tests.missingextrastring:34
+msgid ""
+"**Is Reference dialog needed** This test will not run if the reference "
+"controls are not available."
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:43
+msgid ""
+"**False positive bug reports** Running this test for Asian languages will"
+" result in LOTS and LOTS of false positives, because the font HAS to "
+"change for the localised text to display properly."
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:48
+msgid ""
+"**Test Identifier** The identifier for this test/bug is "
+"\"CompareToRefFont\""
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont.CompareToRefFontTest:1
+msgid "Compare the font to the font of the reference control"
+msgstr ""
+
+#: ../../code/pywinauto.tests.leadtrailspaces.txt:2
+msgid "pywinauto.tests.leadtrailspaces"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:1
+msgid "Different Leading and Trailing Spaces Test"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:3
+msgid ""
+"**What is checked** Checks that the same space characters (<space>, "
+"<tab>, <enter>, <vertical tab>) are before and after all non space "
+"characters in the title of the control when compared to the reference "
+"control."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:8
+msgid ""
+"**How is it checked** Find the 1st non-space character, and the "
+"characters of the title up to that are the leading spaces. Find the last "
+"non-space character, and the characters of the title after that are the "
+"trailing spaces. These are then compared to the lead and trail spaces "
+"from the reference control and if they are not exactly the then a bug is "
+"reported."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:16
+msgid ""
+"**When is a bug reported** When either the leading or trailing spaces of "
+"the control being tested does not match the equivalent spaces of the "
+"reference control exactly."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:20
+msgid "**Bug Extra Information** The bug contains the following extra information"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:23
+msgid ""
+"**Lead-Trail**  Whether this bug report is for the leading or trailing "
+"spaces of the control, String"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:26
+msgid "This will be either:"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:28
+msgid "\"Leading\"  bug relating to leading spaces"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:29
+msgid "\"Trailing\"  bug relating to trailing spaces"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:31
+msgid ""
+"**Ref**  The leading or trailings spaces of the reference string "
+"(depending on Lead-Trail value), String"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:33
+msgid ""
+"**Loc**  The leading or trailings spaces of the local string (depending "
+"on Lead-Trail value), String"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:39
+msgid ""
+"**False positive bug reports** This is usually not a very important test,"
+" so if it generates many false positives then we should consider removing"
+" it."
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces:43
+msgid ""
+"**Test Identifier** The identifier for this test/bug is "
+"\"LeadTrailSpaces\""
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces.GetLeadSpaces:1
+msgid "Return the leading spaces of the string"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces.GetTrailSpaces:1
+msgid "Return the trailing spaces of the string"
+msgstr ""
+
+#: of pywinauto.tests.leadtrailspaces.LeadTrailSpacesTest:1
+msgid "Return the leading/trailing space bugs for the windows"
+msgstr ""
+
+#: ../../code/pywinauto.tests.miscvalues.txt:2
+msgid "pywinauto.tests.miscvalues"
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:1
+msgid "Miscellaneous Control properties Test"
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:3
+msgid ""
+"**What is checked** This checks various values related to a control in "
+"windows. The values tested are class_name      The class type of the "
+"control style   The Style of the control (GetWindowLong) exstyle The "
+"Extended Style of the control (GetWindowLong) help_id The Help ID of the "
+"control (GetWindowLong) control_id      The Control ID of the control "
+"(GetWindowLong) user_data       The User Data of the control "
+"(GetWindowLong) Visibility      Whether the control is visible or not"
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:14
+msgid ""
+"**How is it checked** After retrieving the information for the control we"
+" compare it to the same information from the reference control."
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:18
+msgid ""
+"**When is a bug reported** If the information does not match then a bug "
+"is reported."
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:31
+msgid ""
+"**False positive bug reports** Some values can change easily without any "
+"bug being caused, for example User Data is actually meant for programmers"
+" to store information for the control and this can change every time the "
+"software is run."
+msgstr ""
+
+#: of pywinauto.tests.miscvalues:36
+msgid "**Test Identifier** The identifier for this test/bug is \"MiscValues\""
+msgstr ""
+
+#: of pywinauto.tests.miscvalues.MiscValuesTest:1
+msgid "Return the bugs from checking miscelaneous values of a control"
+msgstr ""
+
+#: ../../code/pywinauto.tests.missalignment.txt:2
+msgid "pywinauto.tests.missalignment"
+msgstr ""
+
+#: of pywinauto.tests.missalignment:1
+msgid "Missalignment Test"
+msgstr ""
+
+#: of pywinauto.tests.missalignment:3
+msgid ""
+"**What is checked** This test checks that if a set of controls were "
+"aligned on a particular axis in the reference dialog  that they are all "
+"aligned on the same axis."
+msgstr ""
+
+#: of pywinauto.tests.missalignment:7
+msgid ""
+"**How is it checked** A list of all the reference controls that are "
+"aligned is created (ie more than one control with the same Top, Left, "
+"Bottom or Right coordinates). These controls are then analysed in the "
+"localised dialog to make sure that they are all aligned on the same axis."
+msgstr ""
+
+#: of pywinauto.tests.missalignment:13
+msgid ""
+"**When is a bug reported** A bug is reported when any of the controls "
+"that were aligned in the reference dialog are no longer aligned in the "
+"localised control."
+msgstr ""
+
+#: of pywinauto.tests.missalignment:17
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description AlignmentType   This is either LEFT, TOP,"
+" RIGHT or BOTTOM. It tells you how the controls were aligned in the "
+"reference dialog. String AlignmentRect   Gives the smallest rectangle "
+"that surrounds ALL the controls concerned in the bug, rectangle"
+msgstr ""
+
+#: of pywinauto.tests.missalignment:25
+msgid ""
+"**Is Reference dialog needed** This test cannot be performed without the "
+"reference control. It is required to see which controls should be "
+"aligned."
+msgstr ""
+
+#: of pywinauto.tests.missalignment:29
+msgid ""
+"**False positive bug reports** It is quite possible that this test "
+"reports false positives: 1.      Where the controls only just happen to "
+"be aligned in the reference dialog (by coincidence) 2.      Where the "
+"control does not have a clear boundary (for example static labels or "
+"checkboxes)  they may be miss-aligned but it is not noticeable that they "
+"are not."
+msgstr ""
+
+#: of pywinauto.tests.missalignment:38
+msgid "**Test Identifier** The identifier for this test/bug is \"Missalignment\""
+msgstr ""
+
+#: of pywinauto.tests.missalignment.MissalignmentTest:1
+msgid "Run the test on the windows passed in"
+msgstr ""
+
+#: ../../code/pywinauto.tests.missingextrastring.txt:2
+msgid "pywinauto.tests.missingextrastring"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:1
+msgid "Different number of special character sequences Test"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:3
+msgid ""
+"**What is checked** This test checks to make sure that certain special "
+"character sequences appear the in the localised if they appear in the "
+"reference title strings. These strings usually mean something to the user"
+" but the software internally does not care if they exist or not. The list"
+" that is currently checked is: \">>\", \">\", \"<<\", \"<\", "
+"\":\"(colon), \"...\", \"&&\", \"&\", \"\""
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:10
+msgid ""
+"**How is it checked** For each of the string to check for we make sure "
+"that if it appears in the reference that it also appears in the localised"
+" title."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:15
+msgid ""
+"If the reference has one of the text strings but the localised does not a"
+" bug is reported."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:17
+msgid ""
+"If the localised has one of the text strings but the reference does not a"
+" bug is reported."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:20
+msgid "Bug Extra Information The bug contains the following extra information"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:23
+msgid ""
+"**MissingOrExtra**      Whether the characters are missing or extra from "
+"the controls being check as compared to the reference, (String with "
+"following possible values)"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:27
+msgid ""
+"\"MissingCharacters\"  The characters are in the reference but not in the"
+" localised."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:29
+msgid ""
+"\"ExtraCharacters\"    The characters are not in the reference but are in"
+" the localised."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:32
+msgid "**MissingOrExtraText**  What character string is missing or added, String"
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:37
+msgid ""
+"**False positive bug reports** Currently this test is at a beta stage "
+"filtering of the results is probably necessary at the moment."
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring:41
+msgid ""
+"**Test Identifier** The identifier for this test/bug is "
+"\"MissingExtraString\""
+msgstr ""
+
+#: of pywinauto.tests.missingextrastring.MissingExtraStringTest:1
+msgid "Return the errors from running the test"
+msgstr ""
+
+#: ../../code/pywinauto.tests.overlapping.txt:2
+msgid "pywinauto.tests.overlapping"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:1
+msgid "Overlapping Test"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:3
+msgid ""
+"**What is checked** The overlapping test checks for controls that occupy "
+"the same space as some other control in the dialog."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:7
+msgid "If the reference controls are available check for each pair of controls:"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:9
+msgid ""
+"If controls are exactly the same size and position in reference then make"
+" sure that they are also in the localised."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:11
+msgid ""
+"If a reference control is wholly contained in another make sure that the "
+"same happens for the controls being tested."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:14
+msgid ""
+"If the reference controls are not available only the following check can "
+"be done"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:17
+msgid ""
+"If controls are overlapped in localised report a bug (if reference is "
+"available it is used just to say if this overlapping happens in reference"
+" also)"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:22
+msgid ""
+"**How is it checked** Various tests are performed on each pair of "
+"controls to see if any of the above conditions are met. The most specific"
+" tests that can be performed are done 1st so that the bugs reported are "
+"as specific as possible. I.e. we report that 2 controls are not exactly "
+"overlapped when they should be rather than jut reporting that they are "
+"overlapped which contains less information."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:29
+msgid "**When is a bug reported** A bug is reported when:"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:32
+msgid ""
+"controls are overlapped (but not contained wholly, and not exactly "
+"overlapped)"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:34
+msgid ""
+"reference controls are exactly overlapped but they are not in tested "
+"dialog"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:36
+msgid ""
+"one reference control is wholly contained in another but not in tested "
+"dialog"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:40
+msgid ""
+"**Bug Extra Information** This test produces 3 different types of bug: "
+"BugType: \"Overlapping\" Name    Description OverlappedRect  <What this "
+"info is>, rectangle"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:46
+msgid ""
+"**BugType -  \"NotContainedOverlap\"** There is no extra information "
+"associated with this bug type"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:49
+msgid ""
+"**BugType - \"NotExactOverlap\"** There is no extra information "
+"associated with this bug type"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:52
+msgid ""
+"**Is Reference dialog needed** For checking whether controls should be "
+"exactly overlapped and whether they should be wholly contained the "
+"reference controls are necessary. If the reference controls are not "
+"available then only simple overlapping of controls will be checked."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:58
+msgid ""
+"**False positive bug reports** If there are controls in the dialog that "
+"are not visible or are moved dynamically it may cause bugs to be reported"
+" that do not need to be logged. If necessary filter out bugs with hidden "
+"controls."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:63
+msgid "**Test Identifier** The identifier for this test is \"Overlapping\""
+msgstr ""
+
+#: ../../code/pywinauto.tests.repeatedhotkey.txt:2
+msgid "pywinauto.tests.repeatedhotkey"
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:1
+msgid "Repeated Hotkeys Test"
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:3
+msgid ""
+"**What is checked** This test checks all the controls in a dialog to see "
+"if there are controls that use the same hotkey character."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:7
+msgid ""
+"**How is it checked** A list of all the hotkeys (converted to uppercase) "
+"used in the dialog is created. Then this list is examined to see if any "
+"hotkeys are used more than once. If any are used more than once a list of"
+" all the controls that use this hotkey are compiled to be used in the bug"
+" report."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:13
+msgid ""
+"**When is a bug reported** If more than one control has the same hotkey "
+"then a bug is reported."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:16
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description RepeatedHotkey  This is the hotkey that "
+"is repeated between the 2 controls converted to uppercase, String "
+"CharsUsedInDialog       This is a list of all the hotkeys used in the "
+"dialog, String AllCharsInDialog        This is a list of all the "
+"characters in the dialog for controls that have a hotkeys, String "
+"AvailableInControlS     A list of the available characters for each "
+"control. Any of the characters in this list could be used as the new "
+"hotkey without conflicting with any existing hotkey."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:29
+msgid ""
+"**Is Reference dialog needed** The reference dialog does not need to be "
+"available. If it is available then for each bug discovered it is checked "
+"to see if it is a problem in the reference dialog. NOTE: Checking the "
+"reference dialog is not so exact here! Only when the equivalent controls "
+"in the reference dialog all have the hotkeys will it be reported as being"
+" in the reference also. I.e. if there are 3 controls with the same hotkey"
+" in the Localised software  then those same controls in the reference "
+"dialog must have the same hotkey for it to be reported as existing in the"
+" reference also."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:40
+msgid ""
+"**False positive bug reports** There should be very few false positives "
+"from this test. Sometimes a control only has one or 2 characters eg "
+"\"X:\" and it is impossible to avoid a hotkey clash. Also for Asian "
+"languages hotkeys should be the same as the US software so probably this "
+"test should be run on those languages."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:46
+msgid "**Test Identifier** The identifier for this test/bug is \"RepeatedHotkey\""
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey.GetHotkey:1
+msgid "Return the position and character of the hotkey"
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey.ImplementsHotkey:1
+msgid "checks whether a control interprets & character to be a hotkey"
+msgstr ""
+
+#: ../../code/pywinauto.tests.translation.txt:2
+msgid "pywinauto.tests.translation"
+msgstr ""
+
+#: of pywinauto.tests.translation:1
+msgid "Translation Test"
+msgstr ""
+
+#: of pywinauto.tests.translation:3
+msgid ""
+"**What is checked** This checks for controls which appear not to be "
+"translated."
+msgstr ""
+
+#: of pywinauto.tests.translation:6
+msgid ""
+"**How is it checked** It compares the text of the localised and reference"
+" controls."
+msgstr ""
+
+#: of pywinauto.tests.translation:9
+msgid ""
+"If there are more than string in the control then each item is searched "
+"for in the US list of titles (so checking is not order dependent). The "
+"indices for the untranslated strings are returned in a comma separated "
+"string. Also the untranslated strings themselves are returned (all as one"
+" string). These strings are not escaped and are delimited as "
+"\"string1\",\"string2\",...\"stringN\"."
+msgstr ""
+
+#: of pywinauto.tests.translation:19
+msgid ""
+"If the text of the localised control is identical to the reference "
+"control (in case, spacing i.e.  a binary compare) then it will be flagged"
+" as untranslated. Otherwise the control is treated as translated."
+msgstr ""
+
+#: of pywinauto.tests.translation:23
+msgid ""
+"Note: This is the method to return the least number of bugs. If there are"
+" differences in any part of the string (e.g. a path or variable name) but"
+" the rest of the string is untranslated then a bug will not be "
+"highlighted"
+msgstr ""
+
+#: of pywinauto.tests.translation:27
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description Strings         The list of the "
+"untranslated strings as explained above StringIndices           The list "
+"of indices (0 based) that are untranslated. This will usually be 0 but if"
+" there are many strings in the control untranslated it will report ALL "
+"the strings e.g. 0,2,5,19,23"
+msgstr ""
+
+#: of pywinauto.tests.translation:35
+msgid "**Is Reference dialog needed** The reference dialog is always necessary."
+msgstr ""
+
+#: of pywinauto.tests.translation:38
+msgid ""
+"**False positive bug reports** False positive bugs will be reported in "
+"the following cases. -       The title of the control stays the same as "
+"the US because the translation is the same as the English text(e.g. Name:"
+" in German) -       The title of the control is not displayed (and not "
+"translated). This can sometimes happen if the programmer displays "
+"something else on the control after the dialog is created."
+msgstr ""
+
+#: of pywinauto.tests.translation:46
+msgid "**Test Identifier** The identifier for this test/bug is \"Translation\""
+msgstr ""
+
+#: ../../code/pywinauto.tests.truncation.txt:2
+msgid "pywinauto.tests.truncation"
+msgstr ""
+
+#: of pywinauto.tests.truncation:1
+msgid "Truncation Test"
+msgstr ""
+
+#: of pywinauto.tests.truncation:3
+msgid ""
+"**What is checked** Checks for controls where the text does not fit in "
+"the space provided by the control."
+msgstr ""
+
+#: of pywinauto.tests.truncation:7
+msgid ""
+"**How is it checked** There is a function in windows (DrawText) that "
+"allows us to find the size that certain text will need. We use this "
+"function with correct fonts and other relevant information for the "
+"control to be as accurate as possible."
+msgstr ""
+
+#: of pywinauto.tests.truncation:12
+msgid ""
+"**When is a bug reported** When the calculated required size for the text"
+" is greater than the size of the space available for displaying the text."
+msgstr ""
+
+#: of pywinauto.tests.truncation:16
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description Strings         The list of the truncated"
+" strings as explained above StringIndices           The list of indices "
+"(0 based) that are truncated. This will often just be 0 but if there are "
+"many strings in the control untranslated it will report ALL the strings "
+"e.g. 0,2,5,19,23"
+msgstr ""
+
+#: of pywinauto.tests.truncation:25
+msgid ""
+"**Is Reference dialog needed** The reference dialog does not need to be "
+"available. If it is available then for each bug discovered it is checked "
+"to see if it is a problem in the reference dialog."
+msgstr ""
+
+#: of pywinauto.tests.truncation:30
+msgid ""
+"**False positive bug reports** Certain controls do not display the text "
+"that is the title of the control, if this is not handled in a standard "
+"manner by the software then DLGCheck will report that the string is "
+"truncated."
+msgstr ""
+
+#: of pywinauto.tests.truncation:35
+msgid "**Test Identifier** The identifier for this test/bug is \"Truncation\""
+msgstr ""
+
+#: of pywinauto.tests.truncation.TruncationTest:1
+msgid "Actually do the test"
+msgstr ""
+
+#: ../../code/pywinauto.timings.txt:2
+msgid "pywinauto.timings"
+msgstr ""
+
+#: of pywinauto.timings:1
+msgid "Global timing settings for all of pywinauto"
+msgstr ""
+
+#: of pywinauto.timings:3
+msgid "This module has one object that should be used for all timing adjustments:"
+msgstr ""
+
+#: of pywinauto.timings:5
+msgid "timings.Timings"
+msgstr ""
+
+#: of pywinauto.timings:7
+msgid "There are a couple of predefined settings:"
+msgstr ""
+
+#: of pywinauto.timings:9
+msgid "``timings.Timings.fast()``"
+msgstr ""
+
+#: of pywinauto.timings:10
+msgid "``timings.Timings.defaults()``"
+msgstr ""
+
+#: of pywinauto.timings:11
+msgid "``timings.Timings.slow()``"
+msgstr ""
+
+#: of pywinauto.timings:13
+msgid "The Following are the individual timing settings that can be adjusted:"
+msgstr ""
+
+#: of pywinauto.timings:15
+msgid "window_find_timeout (default 5)"
+msgstr ""
+
+#: of pywinauto.timings:16
+msgid "window_find_retry (default .09)"
+msgstr ""
+
+#: of pywinauto.timings:18
+msgid "app_start_timeout (default 10)"
+msgstr ""
+
+#: of pywinauto.timings:19
+msgid "app_start_retry   (default .90)"
+msgstr ""
+
+#: of pywinauto.timings:21
+msgid "app_connect_timeout (default 5.)"
+msgstr ""
+
+#: of pywinauto.timings:22
+msgid "app_connect_retry (default .1)"
+msgstr ""
+
+#: of pywinauto.timings:24
+msgid "cpu_usage_interval (default .5)"
+msgstr ""
+
+#: of pywinauto.timings:25
+msgid "cpu_usage_wait_timeout (default 20)"
+msgstr ""
+
+#: of pywinauto.timings:27
+msgid "exists_timeout  (default .5)"
+msgstr ""
+
+#: of pywinauto.timings:28
+msgid "exists_retry   (default .3)"
+msgstr ""
+
+#: of pywinauto.timings:30
+msgid "after_click_wait  (default .09)"
+msgstr ""
+
+#: of pywinauto.timings:31
+msgid "after_clickinput_wait (default .09)"
+msgstr ""
+
+#: of pywinauto.timings:33
+msgid "after_menu_wait   (default .1)"
+msgstr ""
+
+#: of pywinauto.timings:35
+msgid "after_sendkeys_key_wait   (default .01)"
+msgstr ""
+
+#: of pywinauto.timings:37
+msgid "after_button_click_wait   (default 0)"
+msgstr ""
+
+#: of pywinauto.timings:39
+msgid "before_closeclick_wait    (default .1)"
+msgstr ""
+
+#: of pywinauto.timings:40
+msgid "closeclick_retry  (default .05)"
+msgstr ""
+
+#: of pywinauto.timings:41
+msgid "closeclick_dialog_close_wait  (default 2)"
+msgstr ""
+
+#: of pywinauto.timings:42
+msgid "after_closeclick_wait (default .2)"
+msgstr ""
+
+#: of pywinauto.timings:44
+msgid "after_windowclose_timeout (default 2)"
+msgstr ""
+
+#: of pywinauto.timings:45
+msgid "after_windowclose_retry (default .5)"
+msgstr ""
+
+#: of pywinauto.timings:47
+msgid "after_setfocus_wait   (default .06)"
+msgstr ""
+
+#: of pywinauto.timings:48
+msgid "setfocus_timeout   (default 2)"
+msgstr ""
+
+#: of pywinauto.timings:49
+msgid "setfocus_retry   (default .1)"
+msgstr ""
+
+#: of pywinauto.timings:51
+msgid "after_setcursorpos_wait   (default .01)"
+msgstr ""
+
+#: of pywinauto.timings:53
+msgid "sendmessagetimeout_timeout   (default .01)"
+msgstr ""
+
+#: of pywinauto.timings:55
+msgid "after_tabselect_wait   (default .05)"
+msgstr ""
+
+#: of pywinauto.timings:57
+msgid "after_listviewselect_wait   (default .01)"
+msgstr ""
+
+#: of pywinauto.timings:58
+msgid "after_listviewcheck_wait  default(.001)"
+msgstr ""
+
+#: of pywinauto.timings:59
+msgid "listviewitemcontrol_timeout default(1.5)"
+msgstr ""
+
+#: of pywinauto.timings:61
+msgid "after_treeviewselect_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:63
+msgid "after_toobarpressbutton_wait  default(.01)"
+msgstr ""
+
+#: of pywinauto.timings:65
+msgid "after_updownchange_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:67
+msgid "after_movewindow_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:68
+msgid "after_buttoncheck_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:69
+msgid "after_comboboxselect_wait  default(.001)"
+msgstr ""
+
+#: of pywinauto.timings:70
+msgid "after_listboxselect_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:71
+msgid "after_listboxfocuschange_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:72
+msgid "after_editsetedittext_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:73
+msgid "after_editselect_wait  default(.02)"
+msgstr ""
+
+#: of pywinauto.timings:75
+msgid "drag_n_drop_move_mouse_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:76
+msgid "before_drag_wait  default(.2)"
+msgstr ""
+
+#: of pywinauto.timings:77
+msgid "before_drop_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:78
+msgid "after_drag_n_drop_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:79
+msgid "scroll_step_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig:1
+msgid "Central storage and manipulation of timing values"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.defaults:1
+msgid "Set all timings to the default time"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.fast:1
+msgid "Set fast timing values"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.fast:3
+msgid ""
+"Currently this changes the timing in the following ways: timeouts = 1 "
+"second waits = 0 seconds retries = .001 seconds (minimum!)"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.fast:8
+msgid "(if existing times are faster then keep existing times)"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.slow:1
+msgid "Set slow timing values"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.slow:3
+msgid ""
+"Currently this changes the timing in the following ways: timeouts = "
+"default timeouts * 10 waits = default waits * 3 retries = default retries"
+" * 3"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.slow:8
+msgid "(if existing times are slower then keep existing times)"
+msgstr ""
+
+#: of pywinauto.timings.always_wait_until:1
+msgid ""
+"Decorator to call wait_until(...) every time for a decorated "
+"function/method"
+msgstr ""
+
+#: of pywinauto.timings.always_wait_until_passes:1
+msgid ""
+"Decorator to call wait_until_passes(...) every time for a decorated "
+"function/method"
+msgstr ""
+
+#: of pywinauto.timings.timestamp:1
+msgid "Get a precise timestamp"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:1
+msgid ""
+"Wait until ``op(function(*args, **kwargs), value)`` is True or until "
+"timeout expires"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:3 pywinauto.timings.wait_until_passes:3
+msgid "**timeout**  how long the function will try the function"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:4 pywinauto.timings.wait_until_passes:4
+msgid "**retry_interval**  how long to wait between retries"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:5 pywinauto.timings.wait_until_passes:5
+msgid "**func** the function that will be executed"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:6
+msgid "**value**  the value to be compared against (defaults to True)"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:7
+msgid "**op** the comparison function (defaults to equality)\\"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:8 pywinauto.timings.wait_until_passes:7
+msgid "**args** optional arguments to be passed to func when called"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:9 pywinauto.timings.wait_until_passes:8
+msgid "**kwargs** optional keyword arguments to be passed to func when called"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:11
+msgid ""
+"Returns the return value of the function If the operation times out then "
+"the return value of the the function is in the 'function_value' attribute"
+" of the raised exception."
+msgstr ""
+
+#: of pywinauto.timings.wait_until:15 pywinauto.timings.wait_until_passes:14
+msgid "e.g. ::"
+msgstr ""
+
+#: of pywinauto.timings.wait_until_passes:1
+msgid "Wait until ``func(*args, **kwargs)`` does not raise one of the exceptions"
+msgstr ""
+
+#: of pywinauto.timings.wait_until_passes:6
+msgid "**exceptions**  list of exceptions to test against (default: Exception)"
+msgstr ""
+
+#: of pywinauto.timings.wait_until_passes:10
+msgid ""
+"Returns the return value of the function If the operation times out then "
+"the original exception raised is in the 'original_exception' attribute of"
+" the raised exception."
+msgstr ""
+
+#: ../../code/pywinauto.uia_defines.txt:2
+msgid "pywinauto.uia_defines"
+msgstr ""
+
+#: ../../code/pywinauto.uia_element_info.txt:2
+msgid "pywinauto.uia_element_info"
+msgstr ""
+
+#: ../../code/pywinauto.win32_element_info.txt:2
+msgid "pywinauto.win32_element_info"
+msgstr ""
+
+#: ../../code/pywinauto.win32_hooks.txt:2
+msgid "pywinauto.win32_hooks"
+msgstr ""
+
+#: ../../code/pywinauto.xml_helpers.txt:2
+msgid "pywinauto.xml_helpers"
+msgstr ""
+

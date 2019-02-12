@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.asianhotkey.txt:2
+msgid "pywinauto.tests.asianhotkey"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:1
+msgid "Asian Hotkey Format Test"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:3
+msgid "**What is checked**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:5
+msgid ""
+"This test checks whether the format for shortcuts/hotkeys follows the "
+"standards for localised Windows applications. This format is {localised "
+"text}({uppercase hotkey}) so for example if the English control is "
+"\"&Help\" the localised control for Asian languages should be "
+"\"LocHelp(H)\""
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:13
+msgid "**How is it checked**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:15
+msgid ""
+"After checking whether this control displays hotkeys it examines the 1st "
+"string of the control to make sure that the format is correct. If the "
+"reference control is available then it also makes sure that the hotkey "
+"character is the same as the reference. Controls with a title of less "
+"than 4 characters are ignored. This has been done to avoid false positive"
+" bug reports for strings like \"&X:\"."
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:22
+msgid "**When is a bug reported**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:24
+msgid ""
+"A bug is reported when a control has a hotkey and it is not in the "
+"correct format. Also if the reference control is available a bug will be "
+"reported if the hotkey character is not the same as used in the reference"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:29
+msgid "**Bug Extra Information**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:31
+msgid ""
+"This test produces 2 different types of bug: BugType: "
+"\"AsianHotkeyFormat\" There is no extra information associated with this "
+"bug type"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:35
+msgid "**BugType: \"AsianHotkeyDiffRef\"**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:37
+msgid "There is no extra information associated with this bug type"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:39
+msgid "**Is Reference dialog needed**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:41
+msgid ""
+"The reference dialog is not needed. If it is unavailable then only bugs "
+"of type \"AsianHotkeyFormat\" will be reported, bug of type "
+"\"AsianHotkeyDiffRef\" will not be found."
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:45
+msgid "**False positive bug reports**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:47
+msgid ""
+"There should be very few false positive bug reports when testing Asian "
+"software. If a string is very short (eg \"&Y:\") but is padded with "
+"spaces then it will get reported."
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:51
+msgid "**Test Identifier**"
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey:53
+msgid "The identifier for this test/bug is \"AsianHotkeyTests\""
+msgstr ""
+
+#: of pywinauto.tests.asianhotkey.AsianHotkeyTest:1
+msgid "Return the repeated hotkey errors"
+msgstr ""
+

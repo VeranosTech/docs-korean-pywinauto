@@ -1,0 +1,316 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../TODO.txt:4
+msgid "PYWINAUTO TODO's"
+msgstr ""
+
+#: ../../TODO.txt:6
+msgid ""
+"Make sure to add documentation strings for all undocumented "
+"methods/functions"
+msgstr ""
+
+#: ../../TODO.txt:8
+msgid "Check coverage of the tests and work to increase it."
+msgstr ""
+
+#: ../../TODO.txt:10
+msgid "Add tests for SendInput click methods"
+msgstr ""
+
+#: ../../TODO.txt:12
+msgid "Implement findbestmatch using FuzzyDict."
+msgstr ""
+
+#: ../../TODO.txt:14
+msgid ""
+"Find a way of doing application data in a better way. Currently if "
+"someone even adds a call to print_control_identifiers() it will break the"
+" matching algorithm!"
+msgstr ""
+
+#: ../../TODO.txt:18
+msgid ""
+"Need to move the checking if a control is a Ownerdrawn/bitmap control out"
+" of __init__ methods and into it's own method something like "
+"IsNormallyRendered() (Why?)"
+msgstr ""
+
+#: ../../TODO.txt:22
+msgid "Give example how to work with Tray Window"
+msgstr ""
+
+#: ../../TODO.txt:24
+msgid ""
+"Fix ToolbarWrapper.PressButton() which doesn't seem to work (found wile "
+"working on IE example script)"
+msgstr ""
+
+#: ../../TODO.txt:27
+msgid "Maybe supply an option so that scripts can be run by using::"
+msgstr ""
+
+#: ../../TODO.txt:31
+msgid ""
+"This would work by creating a Py2exe wrapper that would import the script"
+" (and optionally call a particular function?)"
+msgstr ""
+
+#: ../../TODO.txt:34
+msgid ""
+"This way pywinauto could be made available to people without python "
+"installed (whether this is a big requirement or not I don't know because "
+"the automation language is python anyway!."
+msgstr ""
+
+#: ../../TODO.txt:38
+msgid "Message traps - how to handle unwanted message boxes popping up?"
+msgstr ""
+
+#: ../../TODO.txt:40
+msgid "Wait for an Exception then handle it there"
+msgstr ""
+
+#: ../../TODO.txt:41
+msgid "set a trap waiting for a specific dialog"
+msgstr ""
+
+#: ../../TODO.txt:42
+msgid ""
+"on calls to window specification, if we fail to find our window then we "
+"can run quickly through the available specified traps to see if any of "
+"them apply - then if they do we can run the associated actions - then try"
+" our original dialog again"
+msgstr ""
+
+#: ../../TODO.txt:47
+msgid ""
+"Handle adding reference controls (in that they should be the controls "
+"used for finding windows)"
+msgstr ""
+
+#: ../../TODO.txt:50
+msgid ""
+"Find the reference name of a variable e.g so that in Dialog._write() we "
+"can know the variable name that called the _write on (this we don't have "
+"to repeat the XML file name!)"
+msgstr ""
+
+#: ../../TODO.txt:54
+msgid ""
+"If we remove the delay after a button click in controlactions then trying"
+" to close two dialogs in a row might fail because the first dialog hasn't"
+" closed yet and the 2nd may have similar title and same closing button "
+"e.g PageSetup.OK.Click(), PageSetup2.OK.Click(). A possible solution to "
+"this might be to keep a cache of windows in the application and no two "
+"different dialog identifiers (PageSetup and PageSetup2 in this case) can "
+"have the same handle - so returning the handle of PageSetup when we call "
+"PageSetup2 would fail (and we would do our usual waiting until it "
+"succeeds or times out)."
+msgstr ""
+
+#: ../../TODO.txt:64
+msgid "Investigate using any of the following"
+msgstr ""
+
+#: ../../TODO.txt:66
+msgid "BringWindowToTop: probably necessary before image capture"
+msgstr ""
+
+#: ../../TODO.txt:67
+msgid "GetTopWindow: maybe to re-set top window after capture?"
+msgstr ""
+
+#: ../../TODO.txt:69
+msgid "EnumThreadWindows"
+msgstr ""
+
+#: ../../TODO.txt:70
+msgid "GetGUIThreadInfo"
+msgstr ""
+
+#: ../../TODO.txt:73
+msgid "Make it easy to work with context(right click) menu's"
+msgstr ""
+
+#: ../../TODO.txt:75
+msgid "Further support .NET controls and download/create a test .NET application"
+msgstr ""
+
+#: ../../TODO.txt:77
+msgid "Look at supporting the Sytem Tray (e.g. right click on an icon)"
+msgstr ""
+
+#: ../../TODO.txt:79
+msgid "supply SystemTray class (singleton probably)"
+msgstr ""
+
+#: ../../TODO.txt:81
+msgid "Look at clicking and text input - maybe use SendInput"
+msgstr ""
+
+#: ../../TODO.txt:83
+msgid "Support Up-Down controls and other common controls"
+msgstr ""
+
+#: ../../TODO.txt:85
+msgid "Find out whether control.item.action() or control.action(item) is better"
+msgstr ""
+
+#: ../../TODO.txt:87
+msgid "Create a Recorder to visually create tests"
+msgstr ""
+
+#: ../../TODO.txt:90
+msgid "**LOW PRIORITY**"
+msgstr ""
+
+#: ../../TODO.txt:92
+msgid ""
+"Create a class that makes it easy to deal with a single window  (e.g. no "
+"application)"
+msgstr ""
+
+#: ../../TODO.txt:95
+msgid "Allow apps to be started in a different thread so we don't lock up"
+msgstr ""
+
+#: ../../TODO.txt:97
+msgid ""
+"this is being done already - the problem is that some messages cannot be "
+"sent across processes if they have pointers (so we need to send a "
+"synchronous message which waits for the other process to respond before "
+"returning)"
+msgstr ""
+
+#: ../../TODO.txt:102
+msgid ""
+"But I guess it would be possible to create a thread for sending those "
+"messages?"
+msgstr ""
+
+#: ../../TODO.txt:105
+msgid ""
+"Liberate the code from HwndWrapper - there is very little this add's "
+"beyond what is available in handleprops. The main reason this is required"
+" is for the FriendlyClassName. So I need to look to see if this can be "
+"moved elsewhere."
+msgstr ""
+
+#: ../../TODO.txt:110
+msgid ""
+"Doing this might flatten the heirarchy quite a bit and reduce the "
+"dependencies on the various packages"
+msgstr ""
+
+#: ../../TODO.txt:114
+msgid ""
+"Need to make Menu items into classes so instead of Dlg.MenuSelect we "
+"should be doing ::"
+msgstr ""
+
+#: ../../TODO.txt:119
+msgid "or even ::"
+msgstr ""
+
+#: ../../TODO.txt:123
+msgid ""
+"To do this we need to change how menu's are retrieved - rather than get "
+"all menuitems at the start - then we just get the requested level."
+msgstr ""
+
+#: ../../TODO.txt:126
+msgid "This would also enable things like ::"
+msgstr ""
+
+#: ../../TODO.txt:137
+msgid "CLOSED (in some way or the other)"
+msgstr ""
+
+#: ../../TODO.txt:138
+msgid ""
+"Allow delay after click to be removed. The main reason that this is "
+"needed at the moment is because if you close a dialog and then try an "
+"action on the parent immediately it may not yet be active - so the delay "
+"is needed to allow it to become active. To fix this we may need to add "
+"more magic around calling actions on dialogs e.g. on an attribute access "
+"for an ActionDialog do the following:"
+msgstr ""
+
+#: ../../TODO.txt:146
+msgid "Check if it is an Action"
+msgstr ""
+
+#: ../../TODO.txt:147
+msgid "If it is not enabled then wait a little bit"
+msgstr ""
+
+#: ../../TODO.txt:148
+msgid "If it is then wait a little bit and try again"
+msgstr ""
+
+#: ../../TODO.txt:149
+msgid "repeat that until success or timeout"
+msgstr ""
+
+#: ../../TODO.txt:151
+msgid ""
+"The main thing that needs to be resolved is that you don't want two of "
+"these waits happening at once (so a wait in a function at 1 level, and "
+"another wait in a function called by the other one - because this would "
+"mean there would be a VERY long delay while the timeout of the nested "
+"function was reached the number of times the calling func tried to "
+"succeed!)"
+msgstr ""
+
+#: ../../TODO.txt:157
+msgid "Add referencing by closest static (or surrounding group box?)"
+msgstr ""
+
+#: ../../TODO.txt:159
+msgid ""
+"Need to modularize the methods of the common_controls because at the "
+"moment they are much too monolithic."
+msgstr ""
+
+#: ../../TODO.txt:162
+msgid "Finish example of saving a page from IE"
+msgstr ""
+
+#: ../../TODO.txt:164
+msgid ""
+"Document that I have not been able to figure out how to reliably check if"
+" a menu item is enabled or not before selecting it. (Probably FIXED NOW!)"
+msgstr ""
+
+#: ../../TODO.txt:167
+msgid ""
+"For Example in Media Player if you try and click the View->Choose Columns"
+" menu item when it is not enabled it crashes Media Player. Theoretically "
+"MF_DISABLED and MF_GRAYED should be used - but I found that these are not"
+" updated (at least for Media Player) until they are dropped down."
+msgstr ""
+
+#: ../../TODO.txt:172
+msgid ""
+"Implement an opional timing/config module so that all timing can be "
+"customized"
+msgstr ""
+

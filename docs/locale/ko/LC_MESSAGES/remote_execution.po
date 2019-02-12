@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../remote_execution.txt:3
+msgid "Remote Execution Guide"
+msgstr ""
+
+#: ../../remote_execution.txt:5
+msgid ""
+"Desktop GUI tests usually require active desktop to move mouse cursor and"
+" type some keys into a focused window. That completely blocks local "
+"machine from normal usage."
+msgstr ""
+
+#: ../../remote_execution.txt:9
+msgid ""
+"But running tests on a remote machine is a challenge. This guide "
+"collected known issues and solutions to control a remote machine with GUI"
+" tests."
+msgstr ""
+
+#: ../../remote_execution.txt:13
+msgid "Windows Remote Desktop features"
+msgstr ""
+
+#: ../../remote_execution.txt:15
+msgid ""
+"Remote Desktop (RDP) provides virtual active desktop to remote machine "
+"with Windows OS. There are 2 potential issues:"
+msgstr ""
+
+#: ../../remote_execution.txt:18
+msgid ""
+"If RDP window is minimized, there is no active desktop on remote PC by "
+"default."
+msgstr ""
+
+#: ../../remote_execution.txt:19
+msgid "If RDP is disconnected, the desktop is locked out."
+msgstr ""
+
+#: ../../remote_execution.txt:21
+msgid ""
+"In both cases any GUI automation jobs will fail (if you don't use some "
+"tricks described below). The workarounds are well described in "
+"TestComplete documetation:"
+msgstr ""
+
+#: ../../remote_execution.txt:24
+msgid "`Running Tests in Minimized Remote Desktop Windows`_"
+msgstr ""
+
+#: ../../remote_execution.txt:25
+msgid "`Disconnecting From Remote Desktop While Running Automated Tests`_"
+msgstr ""
+
+#: ../../remote_execution.txt:32
+msgid "VNC Server software"
+msgstr ""
+
+#: ../../remote_execution.txt:34
+msgid ""
+"There is more simple way to avoid above issues: using VNC server software"
+" (for example, Tight VNC). It works as a pair of client and server. VNC "
+"server also provides active desktop on a remote machine."
+msgstr ""
+
+#: ../../remote_execution.txt:38
+msgid ""
+"This is a non-virtual desktop so working with native screen resolution on"
+" a remote PC may require updating video drivers."
+msgstr ""
+
+#: ../../remote_execution.txt:40
+msgid ""
+"Minimizing or disconnecting VNC client doesn't destroy active desktop (by"
+" default!)."
+msgstr ""
+
+#: ../../remote_execution.txt:41
+msgid ""
+"This is a cross-platform solution (VNC server is a native part of macOS "
+"and available on Linux)."
+msgstr ""
+
+#: ../../remote_execution.txt:44
+msgid "The only problem you may face with:"
+msgstr ""
+
+#: ../../remote_execution.txt:46
+msgid ""
+"Using Remote Desktop (RDP) may break VNC server benefits and you have to "
+"restart remote PC or apply RDP workarounds described above."
+msgstr ""
+
+#: ../../remote_execution.txt:51
+msgid "Other remote access software"
+msgstr ""
+
+#: ../../remote_execution.txt:53
+msgid ""
+"If anyone tried to run GUI tests/automation remotely using Team Viewer, "
+"PowerBI desktop or any other virtual desktop software, feel free to add "
+"more details into this guide."
+msgstr ""
+
+#: ../../remote_execution.txt:58
+msgid "Tricks to run automation on a locked machine"
+msgstr ""
+
+#: ../../remote_execution.txt:60
+msgid ""
+"For some applications it's possible to run GUI automation on a locked "
+"machine, but it requires using special methods. First it's worth listing "
+"methods that don't work on a locked machine:"
+msgstr ""
+
+#: ../../remote_execution.txt:64
+msgid ""
+"`click_input`_ and all other mouse click and press methods ending with "
+"``_input``."
+msgstr ""
+
+#: ../../remote_execution.txt:65
+msgid "`set_focus`_ as it uses ``SetCursorPos`` and ``SetForegroundWindow``."
+msgstr ""
+
+#: ../../remote_execution.txt:66
+msgid "`type_keys`_ for native keyboard input."
+msgstr ""
+
+#: ../../remote_execution.txt:67
+msgid "Direct usage of modules `mouse`_ and `keyboard`_."
+msgstr ""
+
+#: ../../remote_execution.txt:75
+msgid ""
+"Some other methods may not work also, but it depends on application. "
+"There are few methods for silent text input in ``backend=\"win32\"``:"
+msgstr ""
+
+#: ../../remote_execution.txt:78
+msgid "`send_chars`_ (symbols only; special key combinations do not work)"
+msgstr ""
+
+#: ../../remote_execution.txt:79
+msgid "`send_keystrokes`_ (some special key combinations may work)"
+msgstr ""
+
+#: ../../remote_execution.txt:85
+msgid "Start remote script using agent based CI"
+msgstr ""
+
+#: ../../remote_execution.txt:87
+msgid ""
+"When your script is ready and you can run it on a remote machine "
+"manually, it's time to automate the last step: trigger running the script"
+" from local machine or from CI server."
+msgstr ""
+
+#: ../../remote_execution.txt:91
+msgid ""
+"If you have internal hosted CI (for example, Jenkins), probably target "
+"machine is already connected to Jenkins master using an agent. There are "
+"three ways to connect agent:"
+msgstr ""
+
+#: ../../remote_execution.txt:95
+msgid ""
+"Run agent as a service: GUI tests won't work in this case because GUI "
+"can't be even created when running as a service."
+msgstr ""
+
+#: ../../remote_execution.txt:97
+msgid "Run agent through SSH: GUI tests won't work."
+msgstr ""
+
+#: ../../remote_execution.txt:98
+msgid "Run agent as a normal application. This is the only working case!"
+msgstr ""
+
+#: ../../remote_execution.txt:102
+msgid "Start remote script directly"
+msgstr ""
+
+#: ../../remote_execution.txt:104
+msgid ""
+"This chapter is inspired by `issue #401`_ (special thanks to "
+"`yangliang003`_)."
+msgstr ""
+
+#: ../../remote_execution.txt:109
+msgid "First option is PsExec. Thanks to `this post on StackExchange`_."
+msgstr ""
+
+#: ../../remote_execution.txt:111
+msgid "Download `PsTools`_."
+msgstr ""
+
+#: ../../remote_execution.txt:112
+msgid ""
+"Get process ID of RDP session using ``tasklist`` command. PowerShell "
+"script:"
+msgstr ""
+
+#: ../../remote_execution.txt:117
+msgid "Start process: ``PsExec.exe -s -i 123 python my_script.py``."
+msgstr ""
+
+#: ../../remote_execution.txt:123
+msgid "`Ansible`_ has PsExec plugin that simplifies it. Playbook example:"
+msgstr ""
+
+#: ../../remote_execution.txt:143
+msgid ""
+"Windows Scheduler is also capable to start jobs with GUI interaction "
+"support. There is easy way to schedule the task from ``cmd.exe`` once: ::"
+msgstr ""
+
+#: ../../remote_execution.txt:151
+msgid "How To`s"
+msgstr ""
+
+#: ../../remote_execution.txt:152
+msgid ":doc:`HowTo`"
+msgstr ""
+

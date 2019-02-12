@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.actionlogger.txt:2
+msgid "pywinauto.actionlogger"
+msgstr ""
+
+#: of pywinauto.actionlogger.disable:1
+msgid "Disable pywinauto logging actions"
+msgstr ""
+
+#: of pywinauto.actionlogger.enable:1
+msgid "Enable pywinauto logging actions"
+msgstr ""
+
+#: of pywinauto.actionlogger.reset_level:1
+msgid "Reset a logging level to a default"
+msgstr ""
+
+#: of pywinauto.actionlogger.set_level:1
+msgid "Set a logging level for the pywinauto logger."
+msgstr ""
+

@@ -1,0 +1,783 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../controls_overview.txt:3
+msgid "Methods available to each different control type"
+msgstr ""
+
+#: ../../controls_overview.txt:5
+msgid "Windows have many controls, buttons, lists, etc"
+msgstr ""
+
+#: ../../controls_overview.txt:9
+msgid "All Controls"
+msgstr ""
+
+#: ../../controls_overview.txt:10
+msgid "These functions are aviailable to all controls."
+msgstr ""
+
+#: ../../controls_overview.txt:12
+msgid "capture_as_image_"
+msgstr ""
+
+#: ../../controls_overview.txt:13
+msgid "click_"
+msgstr ""
+
+#: ../../controls_overview.txt:14
+msgid "click_input_"
+msgstr ""
+
+#: ../../controls_overview.txt:15
+msgid "close_"
+msgstr ""
+
+#: ../../controls_overview.txt:16
+msgid "close_click_"
+msgstr ""
+
+#: ../../controls_overview.txt:17
+msgid "debug_message_"
+msgstr ""
+
+#: ../../controls_overview.txt:18
+msgid "double_click_"
+msgstr ""
+
+#: ../../controls_overview.txt:19
+msgid "double_click_input_"
+msgstr ""
+
+#: ../../controls_overview.txt:20
+msgid "drag_mouse_"
+msgstr ""
+
+#: ../../controls_overview.txt:21
+msgid "draw_outline_"
+msgstr ""
+
+#: ../../controls_overview.txt:22
+msgid "get_focus_"
+msgstr ""
+
+#: ../../controls_overview.txt:23
+msgid "get_show_state_"
+msgstr ""
+
+#: ../../controls_overview.txt:24
+msgid "maximize_"
+msgstr ""
+
+#: ../../controls_overview.txt:25
+msgid "menu_select_"
+msgstr ""
+
+#: ../../controls_overview.txt:26
+msgid "minimize_"
+msgstr ""
+
+#: ../../controls_overview.txt:27
+msgid "move_mouse_"
+msgstr ""
+
+#: ../../controls_overview.txt:28
+msgid "move_window_"
+msgstr ""
+
+#: ../../controls_overview.txt:29
+msgid "notify_menu_select_"
+msgstr ""
+
+#: ../../controls_overview.txt:30
+msgid "notify_parent_"
+msgstr ""
+
+#: ../../controls_overview.txt:31
+msgid "press_mouse_"
+msgstr ""
+
+#: ../../controls_overview.txt:32
+msgid "press_mouse_input_"
+msgstr ""
+
+#: ../../controls_overview.txt:33
+msgid "release_mouse_"
+msgstr ""
+
+#: ../../controls_overview.txt:34
+msgid "release_mouse_input_"
+msgstr ""
+
+#: ../../controls_overview.txt:35
+msgid "restore_"
+msgstr ""
+
+#: ../../controls_overview.txt:36
+msgid "right_click_"
+msgstr ""
+
+#: ../../controls_overview.txt:37
+msgid "right_click_input_"
+msgstr ""
+
+#: ../../controls_overview.txt:38
+msgid "send_message_"
+msgstr ""
+
+#: ../../controls_overview.txt:39
+msgid "send_message_timeout_"
+msgstr ""
+
+#: ../../controls_overview.txt:40
+msgid "set_focus_"
+msgstr ""
+
+#: ../../controls_overview.txt:41
+msgid "set_window_text_"
+msgstr ""
+
+#: ../../controls_overview.txt:42
+msgid "type_keys_"
+msgstr ""
+
+#: ../../controls_overview.txt:44
+msgid "Children_"
+msgstr ""
+
+#: ../../controls_overview.txt:45
+msgid "Class_"
+msgstr ""
+
+#: ../../controls_overview.txt:46
+msgid "ClientRect_"
+msgstr ""
+
+#: ../../controls_overview.txt:47
+msgid "ClientRects_"
+msgstr ""
+
+#: ../../controls_overview.txt:48
+msgid "ContextHelpID_"
+msgstr ""
+
+#: ../../controls_overview.txt:49
+msgid "ControlID_"
+msgstr ""
+
+#: ../../controls_overview.txt:50
+msgid "ExStyle_"
+msgstr ""
+
+#: ../../controls_overview.txt:51
+msgid "Font_"
+msgstr ""
+
+#: ../../controls_overview.txt:52
+msgid "Fonts_"
+msgstr ""
+
+#: ../../controls_overview.txt:53
+msgid "FriendlyClassName_"
+msgstr ""
+
+#: ../../controls_overview.txt:54
+msgid "GetProperties_"
+msgstr ""
+
+#: ../../controls_overview.txt:55
+msgid "HasExStyle_"
+msgstr ""
+
+#: ../../controls_overview.txt:56
+msgid "HasStyle_"
+msgstr ""
+
+#: ../../controls_overview.txt:57
+msgid "IsChild_"
+msgstr ""
+
+#: ../../controls_overview.txt:58
+msgid "IsDialog_"
+msgstr ""
+
+#: ../../controls_overview.txt:59
+msgid "IsEnabled_"
+msgstr ""
+
+#: ../../controls_overview.txt:60
+msgid "IsUnicode_"
+msgstr ""
+
+#: ../../controls_overview.txt:61
+msgid "IsVisible_"
+msgstr ""
+
+#: ../../controls_overview.txt:62
+msgid "Menu_"
+msgstr ""
+
+#: ../../controls_overview.txt:63
+msgid "MenuItem_"
+msgstr ""
+
+#: ../../controls_overview.txt:64
+msgid "MenuItems_"
+msgstr ""
+
+#: ../../controls_overview.txt:65
+msgid "Owner_"
+msgstr ""
+
+#: ../../controls_overview.txt:66
+msgid "Parent_"
+msgstr ""
+
+#: ../../controls_overview.txt:67
+msgid "PopupWindow_"
+msgstr ""
+
+#: ../../controls_overview.txt:68
+msgid "ProcessID_"
+msgstr ""
+
+#: ../../controls_overview.txt:69
+msgid "Rectangle_"
+msgstr ""
+
+#: ../../controls_overview.txt:70
+msgid "Style_"
+msgstr ""
+
+#: ../../controls_overview.txt:71
+msgid "Texts_"
+msgstr ""
+
+#: ../../controls_overview.txt:72
+msgid "TopLevelParent_"
+msgstr ""
+
+#: ../../controls_overview.txt:73
+msgid "UserData_"
+msgstr ""
+
+#: ../../controls_overview.txt:74
+msgid "VerifyActionable_"
+msgstr ""
+
+#: ../../controls_overview.txt:75
+msgid "VerifyEnabled_"
+msgstr ""
+
+#: ../../controls_overview.txt:76
+msgid "VerifyVisible_"
+msgstr ""
+
+#: ../../controls_overview.txt:77
+msgid "WindowText_"
+msgstr ""
+
+#: ../../controls_overview.txt:151
+msgid "Button, CheckBox, RadioButton, GroupBox"
+msgstr ""
+
+#: ../../controls_overview.txt:153
+msgid "ButtonWrapper.Check_"
+msgstr ""
+
+#: ../../controls_overview.txt:154
+msgid "ButtonWrapper.GetCheckState_"
+msgstr ""
+
+#: ../../controls_overview.txt:155
+msgid "ButtonWrapper.SetCheckIndeterminate_"
+msgstr ""
+
+#: ../../controls_overview.txt:156
+msgid "ButtonWrapper.UnCheck_"
+msgstr ""
+
+#: ../../controls_overview.txt:165
+msgid "ComboBox"
+msgstr ""
+
+#: ../../controls_overview.txt:167
+msgid "ComboBoxWrapper.DroppedRect_"
+msgstr ""
+
+#: ../../controls_overview.txt:168
+msgid "ComboBoxWrapper.ItemCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:169
+msgid "ComboBoxWrapper.ItemData_"
+msgstr ""
+
+#: ../../controls_overview.txt:170
+msgid "ComboBoxWrapper.ItemTexts_"
+msgstr ""
+
+#: ../../controls_overview.txt:171
+msgid "ComboBoxWrapper.Select_"
+msgstr ""
+
+#: ../../controls_overview.txt:172
+msgid "ComboBoxWrapper.SelectedIndex_"
+msgstr ""
+
+#: ../../controls_overview.txt:182
+msgid "Dialog"
+msgstr ""
+
+#: ../../controls_overview.txt:184
+msgid "DialogWrapper.ClientAreaRect_"
+msgstr ""
+
+#: ../../controls_overview.txt:185
+msgid "DialogWrapper.RunTests_"
+msgstr ""
+
+#: ../../controls_overview.txt:186
+msgid "DialogWrapper.WriteToXML_"
+msgstr ""
+
+#: ../../controls_overview.txt:193
+msgid "Edit"
+msgstr ""
+
+#: ../../controls_overview.txt:195
+msgid "EditWrapper.GetLine_"
+msgstr ""
+
+#: ../../controls_overview.txt:196
+msgid "EditWrapper.LineCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:197
+msgid "EditWrapper.LineLength_"
+msgstr ""
+
+#: ../../controls_overview.txt:198
+msgid "EditWrapper.Select_"
+msgstr ""
+
+#: ../../controls_overview.txt:199
+msgid "EditWrapper.SelectionIndices_"
+msgstr ""
+
+#: ../../controls_overview.txt:200
+msgid "EditWrapper.SetEditText_"
+msgstr ""
+
+#: ../../controls_overview.txt:201
+msgid "EditWrapper.set_window_text_"
+msgstr ""
+
+#: ../../controls_overview.txt:202
+msgid "EditWrapper.TextBlock_"
+msgstr ""
+
+#: ../../controls_overview.txt:214
+msgid "Header"
+msgstr ""
+
+#: ../../controls_overview.txt:216
+msgid "HeaderWrapper.GetColumnRectangle_"
+msgstr ""
+
+#: ../../controls_overview.txt:217
+msgid "HeaderWrapper.GetColumnText_"
+msgstr ""
+
+#: ../../controls_overview.txt:218
+msgid "HeaderWrapper.ItemCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:225
+msgid "ListBox"
+msgstr ""
+
+#: ../../controls_overview.txt:227
+msgid "ListBoxWrapper.GetItemFocus_"
+msgstr ""
+
+#: ../../controls_overview.txt:228
+msgid "ListBoxWrapper.ItemCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:229
+msgid "ListBoxWrapper.ItemData_"
+msgstr ""
+
+#: ../../controls_overview.txt:230
+msgid "ListBoxWrapper.ItemTexts_"
+msgstr ""
+
+#: ../../controls_overview.txt:231
+msgid "ListBoxWrapper.Select_"
+msgstr ""
+
+#: ../../controls_overview.txt:232
+msgid "ListBoxWrapper.SelectedIndices_"
+msgstr ""
+
+#: ../../controls_overview.txt:233
+msgid "ListBoxWrapper.SetItemFocus_"
+msgstr ""
+
+#: ../../controls_overview.txt:245
+msgid "ListView"
+msgstr ""
+
+#: ../../controls_overview.txt:247
+msgid "ListViewWrapper.Check_"
+msgstr ""
+
+#: ../../controls_overview.txt:248
+msgid "ListViewWrapper.ColumnCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:249
+msgid "ListViewWrapper.Columns_"
+msgstr ""
+
+#: ../../controls_overview.txt:250
+msgid "ListViewWrapper.ColumnWidths_"
+msgstr ""
+
+#: ../../controls_overview.txt:251
+msgid "ListViewWrapper.GetColumn_"
+msgstr ""
+
+#: ../../controls_overview.txt:252
+msgid "ListViewWrapper.GetHeaderControl_"
+msgstr ""
+
+#: ../../controls_overview.txt:253
+msgid "ListViewWrapper.GetItem_"
+msgstr ""
+
+#: ../../controls_overview.txt:254
+msgid "ListViewWrapper.GetSelectedCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:255
+msgid "ListViewWrapper.IsChecked_"
+msgstr ""
+
+#: ../../controls_overview.txt:256
+msgid "ListViewWrapper.IsFocused_"
+msgstr ""
+
+#: ../../controls_overview.txt:257
+msgid "ListViewWrapper.IsSelected_"
+msgstr ""
+
+#: ../../controls_overview.txt:258
+msgid "ListViewWrapper.ItemCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:259
+msgid "ListViewWrapper.Items_"
+msgstr ""
+
+#: ../../controls_overview.txt:260
+msgid "ListViewWrapper.Select_"
+msgstr ""
+
+#: ../../controls_overview.txt:261
+msgid "ListViewWrapper.Deselect_"
+msgstr ""
+
+#: ../../controls_overview.txt:262
+msgid "ListViewWrapper.UnCheck_"
+msgstr ""
+
+#: ../../controls_overview.txt:282
+msgid "PopupMenu"
+msgstr ""
+
+#: ../../controls_overview.txt:283 ../../controls_overview.txt:298
+msgid "(no extra visible methods)"
+msgstr ""
+
+#: ../../controls_overview.txt:286
+msgid "ReBar"
+msgstr ""
+
+#: ../../controls_overview.txt:288
+msgid "ReBarWrapper.BandCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:289
+msgid "ReBarWrapper.GetBand_"
+msgstr ""
+
+#: ../../controls_overview.txt:290
+msgid "ReBarWrapper.GetToolTipsControl_"
+msgstr ""
+
+#: ../../controls_overview.txt:297
+msgid "Static"
+msgstr ""
+
+#: ../../controls_overview.txt:301
+msgid "StatusBar"
+msgstr ""
+
+#: ../../controls_overview.txt:303
+msgid "StatusBarWrapper.BorderWidths_"
+msgstr ""
+
+#: ../../controls_overview.txt:304
+msgid "StatusBarWrapper.GetPartRect_"
+msgstr ""
+
+#: ../../controls_overview.txt:305
+msgid "StatusBarWrapper.GetPartText_"
+msgstr ""
+
+#: ../../controls_overview.txt:306
+msgid "StatusBarWrapper.PartCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:307
+msgid "StatusBarWrapper.PartRightEdges_"
+msgstr ""
+
+#: ../../controls_overview.txt:316
+msgid "TabControl"
+msgstr ""
+
+#: ../../controls_overview.txt:318
+msgid "TabControlWrapper.GetSelectedTab_"
+msgstr ""
+
+#: ../../controls_overview.txt:319
+msgid "TabControlWrapper.GetTabRect_"
+msgstr ""
+
+#: ../../controls_overview.txt:320
+msgid "TabControlWrapper.GetTabState_"
+msgstr ""
+
+#: ../../controls_overview.txt:321
+msgid "TabControlWrapper.GetTabText_"
+msgstr ""
+
+#: ../../controls_overview.txt:322
+msgid "TabControlWrapper.RowCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:323
+msgid "TabControlWrapper.Select_"
+msgstr ""
+
+#: ../../controls_overview.txt:324
+msgid "TabControlWrapper.TabCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:325
+msgid "TabControlWrapper.TabStates_"
+msgstr ""
+
+#: ../../controls_overview.txt:337
+msgid "Toolbar"
+msgstr ""
+
+#: ../../controls_overview.txt:339
+msgid "ToolbarWrapper.Button_"
+msgstr ""
+
+#: ../../controls_overview.txt:340
+msgid "ToolbarWrapper.ButtonCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:341
+msgid "ToolbarWrapper.GetButton_"
+msgstr ""
+
+#: ../../controls_overview.txt:342
+msgid "ToolbarWrapper.GetButtonRect_"
+msgstr ""
+
+#: ../../controls_overview.txt:343
+msgid "ToolbarWrapper.GetToolTipsControl_"
+msgstr ""
+
+#: ../../controls_overview.txt:344
+msgid "ToolbarWrapper.PressButton_"
+msgstr ""
+
+#: ../../controls_overview.txt:354
+msgid "*ToolbarButton* (returned by ``Button()``)"
+msgstr ""
+
+#: ../../controls_overview.txt:356
+msgid "ToolbarButton.Rectangle_"
+msgstr ""
+
+#: ../../controls_overview.txt:357
+msgid "ToolbarButton.Style_"
+msgstr ""
+
+#: ../../controls_overview.txt:358
+msgid "ToolbarButton.click_input_"
+msgstr ""
+
+#: ../../controls_overview.txt:359
+msgid "ToolbarButton.Click_"
+msgstr ""
+
+#: ../../controls_overview.txt:360
+msgid "ToolbarButton.IsCheckable_"
+msgstr ""
+
+#: ../../controls_overview.txt:361
+msgid "ToolbarButton.IsChecked_"
+msgstr ""
+
+#: ../../controls_overview.txt:362
+msgid "ToolbarButton.IsEnabled_"
+msgstr ""
+
+#: ../../controls_overview.txt:363
+msgid "ToolbarButton.IsPressable_"
+msgstr ""
+
+#: ../../controls_overview.txt:364
+msgid "ToolbarButton.IsPressed_"
+msgstr ""
+
+#: ../../controls_overview.txt:365
+msgid "ToolbarButton.State_"
+msgstr ""
+
+#: ../../controls_overview.txt:381
+msgid "ToolTips"
+msgstr ""
+
+#: ../../controls_overview.txt:383
+msgid "ToolTipsWrapper.GetTip_"
+msgstr ""
+
+#: ../../controls_overview.txt:384
+msgid "ToolTipsWrapper.GetTipText_"
+msgstr ""
+
+#: ../../controls_overview.txt:385
+msgid "ToolTipsWrapper.ToolCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:392
+msgid "TreeView"
+msgstr ""
+
+#: ../../controls_overview.txt:394
+msgid "TreeViewWrapper.EnsureVisible_"
+msgstr ""
+
+#: ../../controls_overview.txt:395
+msgid "TreeViewWrapper.GetItem_"
+msgstr ""
+
+#: ../../controls_overview.txt:396
+msgid "TreeViewWrapper.GetProperties_"
+msgstr ""
+
+#: ../../controls_overview.txt:397
+msgid "TreeViewWrapper.IsSelected_"
+msgstr ""
+
+#: ../../controls_overview.txt:398
+msgid "TreeViewWrapper.ItemCount_"
+msgstr ""
+
+#: ../../controls_overview.txt:399
+msgid "TreeViewWrapper.Root_"
+msgstr ""
+
+#: ../../controls_overview.txt:400
+msgid "TreeViewWrapper.Select_"
+msgstr ""
+
+#: ../../controls_overview.txt:412
+msgid "*TreeViewElement* (returned by ``GetItem()`` and ``Root()``)"
+msgstr ""
+
+#: ../../controls_overview.txt:414
+msgid "TreeViewElement.Children_"
+msgstr ""
+
+#: ../../controls_overview.txt:415
+msgid "TreeViewElement.Item_"
+msgstr ""
+
+#: ../../controls_overview.txt:416
+msgid "TreeViewElement.Next_"
+msgstr ""
+
+#: ../../controls_overview.txt:417
+msgid "TreeViewElement.Rectangle_"
+msgstr ""
+
+#: ../../controls_overview.txt:418
+msgid "TreeViewElement.State_"
+msgstr ""
+
+#: ../../controls_overview.txt:419
+msgid "TreeViewElement.SubElements_"
+msgstr ""
+
+#: ../../controls_overview.txt:420
+msgid "TreeViewElement.Text_"
+msgstr ""
+
+#: ../../controls_overview.txt:433
+msgid "UpDown"
+msgstr ""
+
+#: ../../controls_overview.txt:435
+msgid "UpDownWrapper.GetBase_"
+msgstr ""
+
+#: ../../controls_overview.txt:436
+msgid "UpDownWrapper.GetBuddyControl_"
+msgstr ""
+
+#: ../../controls_overview.txt:437
+msgid "UpDownWrapper.GetRange_"
+msgstr ""
+
+#: ../../controls_overview.txt:438
+msgid "UpDownWrapper.GetValue_"
+msgstr ""
+
+#: ../../controls_overview.txt:439
+msgid "UpDownWrapper.SetValue_"
+msgstr ""
+
+#: ../../controls_overview.txt:440
+msgid "UpDownWrapper.Increment_"
+msgstr ""
+
+#: ../../controls_overview.txt:441
+msgid "UpDownWrapper.Decrement_"
+msgstr ""
+

@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.allcontrols.txt:2
+msgid "pywinauto.tests.allcontrols"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:1
+msgid "Get All Controls Test"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:3
+msgid ""
+"**What is checked** This test does no actual testing  it just returns "
+"each control."
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:6
+msgid ""
+"**How is it checked** A loop over all the controls in the dialog is made "
+"and each control added to the list of bugs"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:10
+msgid "**When is a bug reported** For each control."
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:13
+msgid ""
+"**Bug Extra Information** There is no extra information associated with "
+"this bug type"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:16
+msgid ""
+"**Is Reference dialog needed** No,but if available the reference control "
+"will be returned with the localised control."
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:20
+msgid "**False positive bug reports** Not possible"
+msgstr ""
+
+#: of pywinauto.tests.allcontrols:23
+msgid "**Test Identifier** The identifier for this test/bug is \"AllControls\""
+msgstr ""
+
+#: of pywinauto.tests.allcontrols.AllControlsTest:1
+msgid "Returns just one bug for each control"
+msgstr ""
+

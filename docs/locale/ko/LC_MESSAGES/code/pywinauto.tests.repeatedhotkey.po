@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.repeatedhotkey.txt:2
+msgid "pywinauto.tests.repeatedhotkey"
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:1
+msgid "Repeated Hotkeys Test"
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:3
+msgid ""
+"**What is checked** This test checks all the controls in a dialog to see "
+"if there are controls that use the same hotkey character."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:7
+msgid ""
+"**How is it checked** A list of all the hotkeys (converted to uppercase) "
+"used in the dialog is created. Then this list is examined to see if any "
+"hotkeys are used more than once. If any are used more than once a list of"
+" all the controls that use this hotkey are compiled to be used in the bug"
+" report."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:13
+msgid ""
+"**When is a bug reported** If more than one control has the same hotkey "
+"then a bug is reported."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:16
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description RepeatedHotkey  This is the hotkey that "
+"is repeated between the 2 controls converted to uppercase, String "
+"CharsUsedInDialog       This is a list of all the hotkeys used in the "
+"dialog, String AllCharsInDialog        This is a list of all the "
+"characters in the dialog for controls that have a hotkeys, String "
+"AvailableInControlS     A list of the available characters for each "
+"control. Any of the characters in this list could be used as the new "
+"hotkey without conflicting with any existing hotkey."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:29
+msgid ""
+"**Is Reference dialog needed** The reference dialog does not need to be "
+"available. If it is available then for each bug discovered it is checked "
+"to see if it is a problem in the reference dialog. NOTE: Checking the "
+"reference dialog is not so exact here! Only when the equivalent controls "
+"in the reference dialog all have the hotkeys will it be reported as being"
+" in the reference also. I.e. if there are 3 controls with the same hotkey"
+" in the Localised software  then those same controls in the reference "
+"dialog must have the same hotkey for it to be reported as existing in the"
+" reference also."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:40
+msgid ""
+"**False positive bug reports** There should be very few false positives "
+"from this test. Sometimes a control only has one or 2 characters eg "
+"\"X:\" and it is impossible to avoid a hotkey clash. Also for Asian "
+"languages hotkeys should be the same as the US software so probably this "
+"test should be run on those languages."
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey:46
+msgid "**Test Identifier** The identifier for this test/bug is \"RepeatedHotkey\""
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey.GetHotkey:1
+msgid "Return the position and character of the hotkey"
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey.ImplementsHotkey:1
+msgid "checks whether a control interprets & character to be a hotkey"
+msgstr ""
+
+#: of pywinauto.tests.repeatedhotkey.RepeatedHotkeyTest:1
+msgid "Return the repeated hotkey errors"
+msgstr ""
+

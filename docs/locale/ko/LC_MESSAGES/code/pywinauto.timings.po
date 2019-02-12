@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.timings.txt:2
+msgid "pywinauto.timings"
+msgstr ""
+
+#: of pywinauto.timings:1
+msgid "Global timing settings for all of pywinauto"
+msgstr ""
+
+#: of pywinauto.timings:3
+msgid "This module has one object that should be used for all timing adjustments:"
+msgstr ""
+
+#: of pywinauto.timings:5
+msgid "timings.Timings"
+msgstr ""
+
+#: of pywinauto.timings:7
+msgid "There are a couple of predefined settings:"
+msgstr ""
+
+#: of pywinauto.timings:9
+msgid "``timings.Timings.fast()``"
+msgstr ""
+
+#: of pywinauto.timings:10
+msgid "``timings.Timings.defaults()``"
+msgstr ""
+
+#: of pywinauto.timings:11
+msgid "``timings.Timings.slow()``"
+msgstr ""
+
+#: of pywinauto.timings:13
+msgid "The Following are the individual timing settings that can be adjusted:"
+msgstr ""
+
+#: of pywinauto.timings:15
+msgid "window_find_timeout (default 5)"
+msgstr ""
+
+#: of pywinauto.timings:16
+msgid "window_find_retry (default .09)"
+msgstr ""
+
+#: of pywinauto.timings:18
+msgid "app_start_timeout (default 10)"
+msgstr ""
+
+#: of pywinauto.timings:19
+msgid "app_start_retry   (default .90)"
+msgstr ""
+
+#: of pywinauto.timings:21
+msgid "app_connect_timeout (default 5.)"
+msgstr ""
+
+#: of pywinauto.timings:22
+msgid "app_connect_retry (default .1)"
+msgstr ""
+
+#: of pywinauto.timings:24
+msgid "cpu_usage_interval (default .5)"
+msgstr ""
+
+#: of pywinauto.timings:25
+msgid "cpu_usage_wait_timeout (default 20)"
+msgstr ""
+
+#: of pywinauto.timings:27
+msgid "exists_timeout  (default .5)"
+msgstr ""
+
+#: of pywinauto.timings:28
+msgid "exists_retry   (default .3)"
+msgstr ""
+
+#: of pywinauto.timings:30
+msgid "after_click_wait  (default .09)"
+msgstr ""
+
+#: of pywinauto.timings:31
+msgid "after_clickinput_wait (default .09)"
+msgstr ""
+
+#: of pywinauto.timings:33
+msgid "after_menu_wait   (default .1)"
+msgstr ""
+
+#: of pywinauto.timings:35
+msgid "after_sendkeys_key_wait   (default .01)"
+msgstr ""
+
+#: of pywinauto.timings:37
+msgid "after_button_click_wait   (default 0)"
+msgstr ""
+
+#: of pywinauto.timings:39
+msgid "before_closeclick_wait    (default .1)"
+msgstr ""
+
+#: of pywinauto.timings:40
+msgid "closeclick_retry  (default .05)"
+msgstr ""
+
+#: of pywinauto.timings:41
+msgid "closeclick_dialog_close_wait  (default 2)"
+msgstr ""
+
+#: of pywinauto.timings:42
+msgid "after_closeclick_wait (default .2)"
+msgstr ""
+
+#: of pywinauto.timings:44
+msgid "after_windowclose_timeout (default 2)"
+msgstr ""
+
+#: of pywinauto.timings:45
+msgid "after_windowclose_retry (default .5)"
+msgstr ""
+
+#: of pywinauto.timings:47
+msgid "after_setfocus_wait   (default .06)"
+msgstr ""
+
+#: of pywinauto.timings:48
+msgid "setfocus_timeout   (default 2)"
+msgstr ""
+
+#: of pywinauto.timings:49
+msgid "setfocus_retry   (default .1)"
+msgstr ""
+
+#: of pywinauto.timings:51
+msgid "after_setcursorpos_wait   (default .01)"
+msgstr ""
+
+#: of pywinauto.timings:53
+msgid "sendmessagetimeout_timeout   (default .01)"
+msgstr ""
+
+#: of pywinauto.timings:55
+msgid "after_tabselect_wait   (default .05)"
+msgstr ""
+
+#: of pywinauto.timings:57
+msgid "after_listviewselect_wait   (default .01)"
+msgstr ""
+
+#: of pywinauto.timings:58
+msgid "after_listviewcheck_wait  default(.001)"
+msgstr ""
+
+#: of pywinauto.timings:59
+msgid "listviewitemcontrol_timeout default(1.5)"
+msgstr ""
+
+#: of pywinauto.timings:61
+msgid "after_treeviewselect_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:63
+msgid "after_toobarpressbutton_wait  default(.01)"
+msgstr ""
+
+#: of pywinauto.timings:65
+msgid "after_updownchange_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:67
+msgid "after_movewindow_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:68
+msgid "after_buttoncheck_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:69
+msgid "after_comboboxselect_wait  default(.001)"
+msgstr ""
+
+#: of pywinauto.timings:70
+msgid "after_listboxselect_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:71
+msgid "after_listboxfocuschange_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:72
+msgid "after_editsetedittext_wait  default(0)"
+msgstr ""
+
+#: of pywinauto.timings:73
+msgid "after_editselect_wait  default(.02)"
+msgstr ""
+
+#: of pywinauto.timings:75
+msgid "drag_n_drop_move_mouse_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:76
+msgid "before_drag_wait  default(.2)"
+msgstr ""
+
+#: of pywinauto.timings:77
+msgid "before_drop_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:78
+msgid "after_drag_n_drop_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings:79
+msgid "scroll_step_wait  default(.1)"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig:1
+msgid "Central storage and manipulation of timing values"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.defaults:1
+msgid "Set all timings to the default time"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.fast:1
+msgid "Set fast timing values"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.fast:3
+msgid ""
+"Currently this changes the timing in the following ways: timeouts = 1 "
+"second waits = 0 seconds retries = .001 seconds (minimum!)"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.fast:8
+msgid "(if existing times are faster then keep existing times)"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.slow:1
+msgid "Set slow timing values"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.slow:3
+msgid ""
+"Currently this changes the timing in the following ways: timeouts = "
+"default timeouts * 10 waits = default waits * 3 retries = default retries"
+" * 3"
+msgstr ""
+
+#: of pywinauto.timings.TimeConfig.slow:8
+msgid "(if existing times are slower then keep existing times)"
+msgstr ""
+
+#: of pywinauto.timings.always_wait_until:1
+msgid ""
+"Decorator to call wait_until(...) every time for a decorated "
+"function/method"
+msgstr ""
+
+#: of pywinauto.timings.always_wait_until_passes:1
+msgid ""
+"Decorator to call wait_until_passes(...) every time for a decorated "
+"function/method"
+msgstr ""
+
+#: of pywinauto.timings.timestamp:1
+msgid "Get a precise timestamp"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:1
+msgid ""
+"Wait until ``op(function(*args, **kwargs), value)`` is True or until "
+"timeout expires"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:3 pywinauto.timings.wait_until_passes:3
+msgid "**timeout**  how long the function will try the function"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:4 pywinauto.timings.wait_until_passes:4
+msgid "**retry_interval**  how long to wait between retries"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:5 pywinauto.timings.wait_until_passes:5
+msgid "**func** the function that will be executed"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:6
+msgid "**value**  the value to be compared against (defaults to True)"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:7
+msgid "**op** the comparison function (defaults to equality)\\"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:8 pywinauto.timings.wait_until_passes:7
+msgid "**args** optional arguments to be passed to func when called"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:9 pywinauto.timings.wait_until_passes:8
+msgid "**kwargs** optional keyword arguments to be passed to func when called"
+msgstr ""
+
+#: of pywinauto.timings.wait_until:11
+msgid ""
+"Returns the return value of the function If the operation times out then "
+"the return value of the the function is in the 'function_value' attribute"
+" of the raised exception."
+msgstr ""
+
+#: of pywinauto.timings.wait_until:15 pywinauto.timings.wait_until_passes:14
+msgid "e.g. ::"
+msgstr ""
+
+#: of pywinauto.timings.wait_until_passes:1
+msgid "Wait until ``func(*args, **kwargs)`` does not raise one of the exceptions"
+msgstr ""
+
+#: of pywinauto.timings.wait_until_passes:6
+msgid "**exceptions**  list of exceptions to test against (default: Exception)"
+msgstr ""
+
+#: of pywinauto.timings.wait_until_passes:10
+msgid ""
+"Returns the return value of the function If the operation times out then "
+"the original exception raised is in the 'original_exception' attribute of"
+" the raised exception."
+msgstr ""
+

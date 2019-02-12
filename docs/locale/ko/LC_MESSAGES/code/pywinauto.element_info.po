@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.element_info.txt:2
+msgid "pywinauto.element_info"
+msgstr ""
+
+#: of pywinauto.element_info:1
+msgid "Interface for classes which should deal with different backend elements"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo:1
+msgid "Abstract wrapper for an element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.children:1
+msgid "Return children of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.class_name:1
+msgid "Return the class name of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.control_id:1
+msgid "Return the ID of the control"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.descendants:1
+msgid "Return descendants of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.dump_window:1
+msgid "Dump an element to a set of properties"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.enabled:1
+msgid "Return True if the element is enabled"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.filter_with_depth:1
+msgid "Return filtered elements with particular depth level relative to the root"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.framework_id:1
+msgid "Return the framework of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.handle:1
+msgid "Return the handle of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.has_depth:1
+msgid "Return True if element has particular depth level relative to the root"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.iter_children:1
+msgid "Iterate over children of element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.iter_descendants:1
+msgid "Iterate over descendants of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.name:1
+msgid "Return the name of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.parent:1
+msgid "Return the parent of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.process_id:1
+msgid "Return the ID of process that controls this element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.rectangle:1
+msgid "Return rectangle of element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.rich_text:1
+msgid "Return the text of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.set_cache_strategy:1
+msgid "Set a cache strategy for frequently used attributes of the element"
+msgstr ""
+
+#: of pywinauto.element_info.ElementInfo.visible:1
+msgid "Return True if the element is visible"
+msgstr ""
+

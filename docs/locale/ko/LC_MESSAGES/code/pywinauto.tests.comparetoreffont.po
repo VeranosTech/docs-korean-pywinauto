@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.comparetoreffont.txt:2
+msgid "pywinauto.tests.comparetoreffont"
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:1
+msgid "Compare against reference font test"
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:3
+msgid ""
+"**What is checked** This test checks all the parameters of the font for "
+"the control against the font for the reference control. If any value is "
+"different then this is reported as a bug. Here is a list of all the "
+"possible values that are tested: lfFaceName      The name of the font "
+"lfHeight        The height of the font lfWidth         Average width of "
+"characters lfEscapement    Angle of text lfOrientation   Another angle "
+"for the text! lfWeight        How bold the text is lfItalic        If the"
+" font is italic lfUnderline     If the font is underlined lfStrikeOut"
+"     If the font is struck out lfCharSet       The character set of the "
+"font lfOutPrecision  The output precision lfClipPrecision The clipping "
+"precision lfQuality       The output quality lfPitchAndFamily        The "
+"pitch and family"
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:24
+msgid ""
+"**How is it checked** Each property of the font for the control being "
+"tested is compared against the equivalent property of the reference "
+"control font for equality."
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:28
+msgid ""
+"**When is a bug reported** For each property of the font that is not "
+"identical to the reference font a bug is reported. So for example if the "
+"Font Face has changed and the text is bold then (at least) 2 bugs will be"
+" reported."
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:33
+msgid ""
+"**Bug Extra Information** The bug contains the following extra "
+"information Name    Description ValueType       What value is incorrect "
+"(see above), String Ref     The reference value converted to a string, "
+"String Loc     The localised value converted to a string, String"
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:40
+msgid ""
+"**Is Reference dialog needed** This test will not run if the reference "
+"controls are not available."
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:43
+msgid ""
+"**False positive bug reports** Running this test for Asian languages will"
+" result in LOTS and LOTS of false positives, because the font HAS to "
+"change for the localised text to display properly."
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont:48
+msgid ""
+"**Test Identifier** The identifier for this test/bug is "
+"\"CompareToRefFont\""
+msgstr ""
+
+#: of pywinauto.tests.comparetoreffont.CompareToRefFontTest:1
+msgid "Compare the font to the font of the reference control"
+msgstr ""
+

@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.comboboxdroppedheight.txt:2
+msgid "pywinauto.tests.comboboxdroppedheight"
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:1
+msgid "ComboBox dropped height Test"
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:3
+msgid ""
+"**What is checked** It is ensured that the height of the list displayed "
+"when the combobox is dropped down is not less than the height of the "
+"reference."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:7
+msgid ""
+"**How is it checked** The value for the dropped rectangle can be "
+"retrieved from windows. The height of this rectangle is calculated and "
+"compared against the reference height."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:11
+msgid ""
+"**When is a bug reported** If the height of the dropped rectangle for the"
+" combobox being checked is less than the height of the reference one then"
+" a bug is reported."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:15
+msgid ""
+"**Bug Extra Information** There is no extra information associated with "
+"this bug type"
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:18
+msgid ""
+"**Is Reference dialog needed** The reference dialog is necessary for this"
+" test."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:21
+msgid ""
+"**False positive bug reports** No false bugs should be reported. If the "
+"font of the localised control has a smaller height than the reference "
+"then it is possible that the dropped rectangle could be of a different "
+"size."
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight:26
+msgid ""
+"**Test Identifier** The identifier for this test/bug is "
+"\"ComboBoxDroppedHeight\""
+msgstr ""
+
+#: of pywinauto.tests.comboboxdroppedheight.ComboBoxDroppedHeightTest:1
+msgid "Check if each combobox height is the same as the reference"
+msgstr ""
+

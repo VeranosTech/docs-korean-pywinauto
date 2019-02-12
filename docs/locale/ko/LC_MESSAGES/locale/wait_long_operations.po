@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../wait_long_operations.txt:3
+msgid "Waiting for Long Operations"
+msgstr ""
+
+#: ../../wait_long_operations.txt:5
+msgid ""
+"A GUI application behaviour is often unstable and your script needs "
+"waiting until a new window appears or an existing window is "
+"closed/hidden. pywinauto can flexibly wait for a dialog initialization "
+"implicitly (with the default timeout) or explicitly using dedicated "
+"methods/functions that could help you to make your code easier and more "
+"reliable."
+msgstr ""
+
+#: ../../wait_long_operations.txt:13
+msgid "Application methods"
+msgstr ""
+
+#: ../../wait_long_operations.txt:15
+msgid "wait_cpu_usage_lower_ (new in pywinauto 0.5.2, renamed in 0.6.0)"
+msgstr ""
+
+#: ../../wait_long_operations.txt:17
+msgid ""
+"This method is useful for multi-threaded interfaces that allow a lazy "
+"initialization in another thread while GUI is responsive and all controls"
+" already exist and seems ready to use. So waiting for a specific window "
+"existence/state is useless. In such case the CPU usage for the whole "
+"process indicates that a task calculation is not finished yet."
+msgstr ""
+
+#: ../../wait_long_operations.txt:23
+msgid "Example: ::"
+msgstr ""
+
+#: ../../wait_long_operations.txt:27
+msgid ""
+"NOTE: this method is available for the whole application process only, "
+"not for a window/element."
+msgstr ""
+
+#: ../../wait_long_operations.txt:30
+msgid "WindowSpecification methods"
+msgstr ""
+
+#: ../../wait_long_operations.txt:32
+msgid "These methods are available to all controls."
+msgstr ""
+
+#: ../../wait_long_operations.txt:34
+msgid "wait_"
+msgstr ""
+
+#: ../../wait_long_operations.txt:35
+msgid "wait_not_"
+msgstr ""
+
+#: ../../wait_long_operations.txt:37
+msgid ""
+"There is an example containing long waits: `install script for 7zip 9.20 "
+"x64 <https://gist.github.com/vasily-v-ryabov/7a04717af4584cbb840f>`_."
+msgstr ""
+
+#: ../../wait_long_operations.txt:40
+msgid ""
+"A ``WindowSpecification`` object isn't necessarily related to an existing"
+" window/control. It's just a description namely a couple of criteria to "
+"search the window. The ``wait`` method (if no any exception is raised) "
+"can guarantee that the target control exists or even visible, enabled "
+"and/or active."
+msgstr ""
+
+#: ../../wait_long_operations.txt:45
+msgid "Functions in ``timings`` module"
+msgstr ""
+
+#: ../../wait_long_operations.txt:47
+msgid "There are also low-level methods useful for any Python code."
+msgstr ""
+
+#: ../../wait_long_operations.txt:49
+msgid "wait_until_"
+msgstr ""
+
+#: ../../wait_long_operations.txt:50
+msgid "wait_until_passes_"
+msgstr ""
+
+#: ../../wait_long_operations.txt:60
+msgid ""
+"Decorators :func:`pywinauto.timings.always_wait_until()` and "
+":func:`pywinauto.timings.always_wait_until_passes()` can also be used if "
+"every function call should have timing control. ::"
+msgstr ""
+
+#: ../../wait_long_operations.txt:73
+msgid "Global timings for all actions"
+msgstr ""
+
+#: ../../wait_long_operations.txt:75
+msgid ""
+"Many actions require some pause before, after and in-between. There are "
+"several global constants in module ``timings`` defining such pauses. It "
+"can be aligned for your needs individually by setting global static "
+"variables in object ``timings.Timings``."
+msgstr ""
+
+#: ../../wait_long_operations.txt:80
+msgid ""
+"All global timings can be set to default at once, or doubled, or divided "
+"by two: ::"
+msgstr ""
+
+#: ../../wait_long_operations.txt:90
+msgid "Identify controls"
+msgstr ""
+
+#: ../../wait_long_operations.txt:92
+msgid "The methods to help you to find a needed control."
+msgstr ""
+
+#: ../../wait_long_operations.txt:94
+msgid "print_control_identifiers_"
+msgstr ""
+
+#: ../../wait_long_operations.txt:95
+msgid "draw_outline_"
+msgstr ""
+
+#: ../../wait_long_operations.txt:103
+msgid "How To`s"
+msgstr ""
+
+#: ../../wait_long_operations.txt:104
+msgid ":doc:`HowTo`"
+msgstr ""
+

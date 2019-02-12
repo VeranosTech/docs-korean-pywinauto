@@ -1,0 +1,285 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../index.txt:3
+msgid "What is pywinauto"
+msgstr ""
+
+#: ../../index.txt:4
+msgid "© Mark Mc Mahon and Contributors_, 2006-2018"
+msgstr ""
+
+#: ../../index.txt:8
+msgid "Released under the BSD 3-clause license"
+msgstr ""
+
+#: ../../index.txt:12
+msgid "What is it?"
+msgstr ""
+
+#: ../../index.txt:13
+msgid ""
+"pywinauto is a set of python modules to automate the Microsoft Windows "
+"GUI. At it's simplest it allows you to send mouse and keyboard actions to"
+" windows dialogs and controls."
+msgstr ""
+
+#: ../../index.txt:19
+msgid "Installation"
+msgstr ""
+
+#: ../../index.txt:20
+msgid "Just run ``pip install pywinauto``"
+msgstr ""
+
+#: ../../index.txt:24
+msgid "Manual installation"
+msgstr ""
+
+#: ../../index.txt:25
+msgid "Install the following Python packages"
+msgstr ""
+
+#: ../../index.txt:27
+msgid "pyWin32_"
+msgstr ""
+
+#: ../../index.txt:28
+msgid "comtypes_"
+msgstr ""
+
+#: ../../index.txt:29
+msgid "six_"
+msgstr ""
+
+#: ../../index.txt:30
+msgid "*(optional)* Pillow_ (to make screenshoots)"
+msgstr ""
+
+#: ../../index.txt:32
+msgid ""
+"Download latest pywinauto from "
+"https://github.com/pywinauto/pywinauto/releases"
+msgstr ""
+
+#: ../../index.txt:33
+msgid "Unpack and run ``python setup.py install``"
+msgstr ""
+
+#: ../../index.txt:41
+msgid "To check you have it installed correctly Run Python ::"
+msgstr ""
+
+#: ../../index.txt:50
+msgid "How does it work"
+msgstr ""
+
+#: ../../index.txt:51
+msgid "The core concept is described in the `Getting Started Guide`_."
+msgstr ""
+
+#: ../../index.txt:56
+msgid ""
+"A lot is done through attribute access (``__getattribute__``) for each "
+"class. For example when you get the attribute of an Application or Dialog"
+" object it looks for a dialog or control (respectively)."
+msgstr ""
+
+#: ../../index.txt:69
+msgid ""
+"This attribute resolution is delayed (with a default timeout) until it "
+"succeeds. So for example if you select a menu option and then look for "
+"the resulting dialog e.g. ::"
+msgstr ""
+
+#: ../../index.txt:78
+msgid ""
+"At the 2nd line the SaveAs dialog might not be open by the time this line"
+" is executed. So what happens is that we wait until we have a control to "
+"resolve before resolving the dialog. At that point if we can't find a "
+"SaveAs dialog with a ComboBox5 control then we wait a very short period "
+"of time and try again, this is repeated up to a maximum time (currently 5"
+" seconds!)"
+msgstr ""
+
+#: ../../index.txt:84
+msgid ""
+"This is to avoid having to use time.sleep or a \"wait\" function "
+"explicitly."
+msgstr ""
+
+#: ../../index.txt:86
+msgid ""
+"If your application performs long time operation, new dialog can appear "
+"or disappear later. You can wait for its new state like so ::"
+msgstr ""
+
+#: ../../index.txt:96
+msgid "Some similar tools for comparison"
+msgstr ""
+
+#: ../../index.txt:97
+msgid "Python tools"
+msgstr ""
+
+#: ../../index.txt:99
+msgid ""
+"PyAutoGui_ - a popular cross-platform library (has image-based search, no"
+" text-based controls manipulation)."
+msgstr ""
+
+#: ../../index.txt:100
+msgid ""
+"Lackey_ - a pure Python replacement for Sikuli (based on image pattern "
+"matching)."
+msgstr ""
+
+#: ../../index.txt:101
+msgid "AXUI_ - one of the wrappers around MS UI Automation API."
+msgstr ""
+
+#: ../../index.txt:102
+msgid "winGuiAuto_ - another module using Win32 API."
+msgstr ""
+
+#: ../../index.txt:109
+msgid "Other scripting language tools"
+msgstr ""
+
+#: ../../index.txt:111
+msgid "(Perl) `Win32::GuiTest`_"
+msgstr ""
+
+#: ../../index.txt:112
+msgid "(Ruby) Win32-Autogui_ - a wrapper around Win32 API."
+msgstr ""
+
+#: ../../index.txt:113
+msgid "(Ruby) RAutomation_ - there are 3 adapters: Win32 API, UIA, AutoIt."
+msgstr ""
+
+#: ../../index.txt:119
+msgid "Other free tools"
+msgstr ""
+
+#: ../../index.txt:121
+msgid "(C#) Winium.Desktop_ - a young but good MS UI Automation based tool."
+msgstr ""
+
+#: ../../index.txt:122
+msgid ""
+"(C#) TestStack.White_ - another good MS UI Automation based library with "
+"a long history."
+msgstr ""
+
+#: ../../index.txt:123
+msgid ""
+"AutoIt_ - free tool with its own Basic-like language (Win32 API based, no"
+" .NET plans)"
+msgstr ""
+
+#: ../../index.txt:124
+msgid "AutoHotKey_ - native C++ tool with its own scripting language (.ahk)"
+msgstr ""
+
+#: ../../index.txt:125
+msgid "`\"Awesome test automation\" list`_ on GitHub"
+msgstr ""
+
+#: ../../index.txt:126
+msgid "`A big list of open source tools for functional testing`_"
+msgstr ""
+
+#: ../../index.txt:135
+msgid "Commercial tools"
+msgstr ""
+
+#: ../../index.txt:137
+msgid ""
+"WinRunner (http://www.mercury.com/us/products/quality-center/functional-"
+"testing/winrunner/)"
+msgstr ""
+
+#: ../../index.txt:138
+msgid ""
+"SilkTest (http://www.segue.com/products/functional-regressional-"
+"testing/silktest.asp)"
+msgstr ""
+
+#: ../../index.txt:139
+msgid "Many Others (http://www.testingfaqs.org/t-gui.html)"
+msgstr ""
+
+#: ../../index.txt:143
+msgid "Why write yet another automation tool if there are so many out there?"
+msgstr ""
+
+#: ../../index.txt:144
+msgid "There are loads of reasons :-)"
+msgstr ""
+
+#: ../../index.txt:160
+msgid "**Takes a different approach:**"
+msgstr ""
+
+#: ../../index.txt:147
+msgid "Most other tools are not object oriented you end  up writing stuff like::"
+msgstr ""
+
+#: ../../index.txt:154
+msgid ""
+"I was hoping to create something more userfriendly (and pythonic). For "
+"example the translation of above would be::"
+msgstr ""
+
+#: ../../index.txt:165
+msgid "**Python makes it easy:**"
+msgstr ""
+
+#: ../../index.txt:163
+msgid ""
+"Python is a great programming language, but there are no automation tools"
+" that were Pythonic (the very few libraries were implemented in Python)."
+msgstr ""
+
+#: ../../index.txt:181
+msgid "**Localization as a main requirement:**"
+msgstr ""
+
+#: ../../index.txt:168
+msgid "Mark:"
+msgstr ""
+
+#: ../../index.txt:170
+msgid ""
+"\"I work in the localization industry and GUI automation is used "
+"extensively as often all you need to do is ensure that your UI behaves "
+"and is correct with respect to the Source UI. This is actually an easier "
+"job then for testing the original source UI."
+msgstr ""
+
+#: ../../index.txt:177
+msgid ""
+"But most automation tools are based off of coordinates or text of the "
+"controls and these can change in the localized software. So my goal ( "
+"though not yet implemented) is to allow scripts to run unchanged between "
+"original source language (often English) and the translated software "
+"(Japanese, German, etc).\""
+msgstr ""
+

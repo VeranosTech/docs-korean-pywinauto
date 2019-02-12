@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Mark Mc Mahon and Contributors
+# This file is distributed under the same license as the pywinauto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pywinauto 0.6.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 11:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../code/pywinauto.tests.overlapping.txt:2
+msgid "pywinauto.tests.overlapping"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:1
+msgid "Overlapping Test"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:3
+msgid ""
+"**What is checked** The overlapping test checks for controls that occupy "
+"the same space as some other control in the dialog."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:7
+msgid "If the reference controls are available check for each pair of controls:"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:9
+msgid ""
+"If controls are exactly the same size and position in reference then make"
+" sure that they are also in the localised."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:11
+msgid ""
+"If a reference control is wholly contained in another make sure that the "
+"same happens for the controls being tested."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:14
+msgid ""
+"If the reference controls are not available only the following check can "
+"be done"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:17
+msgid ""
+"If controls are overlapped in localised report a bug (if reference is "
+"available it is used just to say if this overlapping happens in reference"
+" also)"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:22
+msgid ""
+"**How is it checked** Various tests are performed on each pair of "
+"controls to see if any of the above conditions are met. The most specific"
+" tests that can be performed are done 1st so that the bugs reported are "
+"as specific as possible. I.e. we report that 2 controls are not exactly "
+"overlapped when they should be rather than jut reporting that they are "
+"overlapped which contains less information."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:29
+msgid "**When is a bug reported** A bug is reported when:"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:32
+msgid ""
+"controls are overlapped (but not contained wholly, and not exactly "
+"overlapped)"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:34
+msgid ""
+"reference controls are exactly overlapped but they are not in tested "
+"dialog"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:36
+msgid ""
+"one reference control is wholly contained in another but not in tested "
+"dialog"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:40
+msgid ""
+"**Bug Extra Information** This test produces 3 different types of bug: "
+"BugType: \"Overlapping\" Name    Description OverlappedRect  <What this "
+"info is>, rectangle"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:46
+msgid ""
+"**BugType -  \"NotContainedOverlap\"** There is no extra information "
+"associated with this bug type"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:49
+msgid ""
+"**BugType - \"NotExactOverlap\"** There is no extra information "
+"associated with this bug type"
+msgstr ""
+
+#: of pywinauto.tests.overlapping:52
+msgid ""
+"**Is Reference dialog needed** For checking whether controls should be "
+"exactly overlapped and whether they should be wholly contained the "
+"reference controls are necessary. If the reference controls are not "
+"available then only simple overlapping of controls will be checked."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:58
+msgid ""
+"**False positive bug reports** If there are controls in the dialog that "
+"are not visible or are moved dynamically it may cause bugs to be reported"
+" that do not need to be logged. If necessary filter out bugs with hidden "
+"controls."
+msgstr ""
+
+#: of pywinauto.tests.overlapping:63
+msgid "**Test Identifier** The identifier for this test is \"Overlapping\""
+msgstr ""
+
+#: of pywinauto.tests.overlapping.OverlappingTest:1
+msgid "Return the repeated hotkey errors"
+msgstr ""
+
