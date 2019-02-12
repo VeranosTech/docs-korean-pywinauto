@@ -1,0 +1,262 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Remote Execution Guide &#8212; pywinauto 0.6.5 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="Methods available to each different control type" href="controls_overview.html" />
+    <link rel="prev" title="Waiting for Long Operations" href="wait_long_operations.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>탐색</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="전체 색인"
+             accesskey="I">색인</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python 모듈 목록"
+             >모듈</a> |</li>
+        <li class="right" >
+          <a href="controls_overview.html" title="Methods available to each different control type"
+             accesskey="N">다음</a> |</li>
+        <li class="right" >
+          <a href="wait_long_operations.html" title="Waiting for Long Operations"
+             accesskey="P">이전</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">pywinauto 0.6.5 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="remote-execution-guide">
+<h1>Remote Execution Guide<a class="headerlink" href="#remote-execution-guide" title="제목 주소">¶</a></h1>
+<p>Desktop GUI tests usually require active desktop to move mouse cursor
+and type some keys into a focused window. That completely blocks local
+machine from normal usage.</p>
+<p>But running tests on a remote machine is a challenge. This guide collected
+known issues and solutions to control a remote machine with GUI tests.</p>
+<div class="section" id="windows-remote-desktop-features">
+<h2>Windows Remote Desktop features<a class="headerlink" href="#windows-remote-desktop-features" title="제목 주소">¶</a></h2>
+<p>Remote Desktop (RDP) provides virtual active desktop to remote machine with Windows OS.
+There are 2 potential issues:</p>
+<blockquote>
+<div><ul class="simple">
+<li>If RDP window is minimized, there is no active desktop on remote PC by default.</li>
+<li>If RDP is disconnected, the desktop is locked out.</li>
+</ul>
+</div></blockquote>
+<p>In both cases any GUI automation jobs will fail (if you don't use some tricks described below).
+The workarounds are well described in TestComplete documetation:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://support.smartbear.com/testcomplete/docs/testing-with/running/via-rdp/in-minimized-window.html">Running Tests in Minimized Remote Desktop Windows</a></li>
+<li><a class="reference external" href="https://support.smartbear.com/testcomplete/docs/testing-with/running/via-rdp/keeping-computer-unlocked.html">Disconnecting From Remote Desktop While Running Automated Tests</a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="vnc-server-software">
+<h2>VNC Server software<a class="headerlink" href="#vnc-server-software" title="제목 주소">¶</a></h2>
+<p>There is more simple way to avoid above issues: using VNC server software
+(for example, Tight VNC). It works as a pair of client and server. VNC server
+also provides active desktop on a remote machine.</p>
+<blockquote>
+<div><ul class="simple">
+<li>This is a non-virtual desktop so working with native screen resolution
+on a remote PC may require updating video drivers.</li>
+<li>Minimizing or disconnecting VNC client doesn't destroy active desktop (by default!).</li>
+<li>This is a cross-platform solution (VNC server is a native part of macOS
+and available on Linux).</li>
+</ul>
+</div></blockquote>
+<p>The only problem you may face with:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Using Remote Desktop (RDP) may break VNC server benefits and you have
+to restart remote PC or apply RDP workarounds described above.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="other-remote-access-software">
+<h2>Other remote access software<a class="headerlink" href="#other-remote-access-software" title="제목 주소">¶</a></h2>
+<p>If anyone tried to run GUI tests/automation remotely using Team Viewer,
+PowerBI desktop or any other virtual desktop software, feel free to add
+more details into this guide.</p>
+</div>
+<div class="section" id="tricks-to-run-automation-on-a-locked-machine">
+<h2>Tricks to run automation on a locked machine<a class="headerlink" href="#tricks-to-run-automation-on-a-locked-machine" title="제목 주소">¶</a></h2>
+<p>For some applications it's possible to run GUI automation on a locked
+machine, but it requires using special methods. First it's worth listing
+methods that don't work on a locked machine:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="code/pywinauto.base_wrapper.html#pywinauto.base_wrapper.BaseWrapper.click_input">click_input</a> and all other mouse click and press methods ending with <code class="docutils literal notranslate"><span class="pre">_input</span></code>.</li>
+<li><a class="reference external" href="code/pywinauto.controls.hwndwrapper.html#pywinauto.controls.hwndwrapper.HwndWrapper.set_focus">set_focus</a> as it uses <code class="docutils literal notranslate"><span class="pre">SetCursorPos</span></code> and <code class="docutils literal notranslate"><span class="pre">SetForegroundWindow</span></code>.</li>
+<li><a class="reference external" href="code/pywinauto.base_wrapper.html#pywinauto.base_wrapper.BaseWrapper.type_keys">type_keys</a> for native keyboard input.</li>
+<li>Direct usage of modules <a class="reference external" href="code/pywinauto.mouse.html">mouse</a> and <a class="reference external" href="code/pywinauto.keyboard.html">keyboard</a>.</li>
+</ul>
+</div></blockquote>
+<p>Some other methods may not work also, but it depends on application.
+There are few methods for silent text input in <code class="docutils literal notranslate"><span class="pre">backend=&quot;win32&quot;</span></code>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="code/pywinauto.controls.hwndwrapper.html#pywinauto.controls.hwndwrapper.HwndWrapper.send_chars">send_chars</a> (symbols only; special key combinations do not work)</li>
+<li><a class="reference external" href="code/pywinauto.controls.hwndwrapper.html#pywinauto.controls.hwndwrapper.HwndWrapper.send_keystrokes">send_keystrokes</a> (some special key combinations may work)</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="start-remote-script-using-agent-based-ci">
+<h2>Start remote script using agent based CI<a class="headerlink" href="#start-remote-script-using-agent-based-ci" title="제목 주소">¶</a></h2>
+<p>When your script is ready and you can run it on a remote machine manually,
+it's time to automate the last step: trigger running the script from local
+machine or from CI server.</p>
+<p>If you have internal hosted CI (for example, Jenkins), probably target
+machine is already connected to Jenkins master using an agent. There are
+three ways to connect agent:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Run agent as a service: GUI tests won't work in this case because
+GUI can't be even created when running as a service.</li>
+<li>Run agent through SSH: GUI tests won't work.</li>
+<li>Run agent as a normal application. This is the only working case!</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="start-remote-script-directly">
+<h2>Start remote script directly<a class="headerlink" href="#start-remote-script-directly" title="제목 주소">¶</a></h2>
+<p>This chapter is inspired by <a class="reference external" href="https://github.com/pywinauto/pywinauto/issues/401">issue #401</a> (special thanks to <a class="reference external" href="https://github.com/yangliang003">yangliang003</a>).</p>
+<p>First option is PsExec. Thanks to <a class="reference external" href="https://serverfault.com/a/852877/368634">this post on StackExchange</a>.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Download <a class="reference external" href="https://docs.microsoft.com/en-us/sysinternals/downloads/psexec">PsTools</a>.</li>
+<li>Get process ID of RDP session using <code class="docutils literal notranslate"><span class="pre">tasklist</span></code> command. PowerShell script:</li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$session = tasklist /fo CSV | findstr RDP ; $session = $session.Split(&quot;,&quot;)[3] ; $session.Split(&#39;&quot;&#39;)[1]
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Start process: <code class="docutils literal notranslate"><span class="pre">PsExec.exe</span> <span class="pre">-s</span> <span class="pre">-i</span> <span class="pre">123</span> <span class="pre">python</span> <span class="pre">my_script.py</span></code>.</li>
+</ol>
+</div></blockquote>
+<p><a class="reference external" href="https://github.com/ansible/ansible">Ansible</a> has PsExec plugin that simplifies it. Playbook example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">test</span> <span class="n">ra</span> <span class="n">module</span>
+  <span class="n">hosts</span><span class="p">:</span> <span class="o">*****</span>
+  <span class="n">tasks</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">run</span> <span class="n">GUI</span> <span class="n">automation</span>
+      <span class="n">win_psexec</span><span class="p">:</span>
+        <span class="n">command</span><span class="p">:</span> <span class="n">python</span> <span class="n">pywinauto_example</span><span class="o">.</span><span class="n">py</span>
+        <span class="n">executable</span><span class="p">:</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Windows</span>\<span class="n">PSTools</span>\<span class="n">psexec</span><span class="o">.</span><span class="n">exe</span>
+        <span class="n">interactive</span><span class="p">:</span> <span class="n">yes</span>
+        <span class="n">username</span><span class="p">:</span> <span class="n">admin</span>
+        <span class="n">password</span><span class="p">:</span> <span class="o">******</span>
+        <span class="n">hostnames</span><span class="p">:</span> <span class="o">******</span>
+</pre></div>
+</div>
+<p>Windows Scheduler is also capable to start jobs with GUI interaction support.
+There is easy way to schedule the task from <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> once:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Schtasks</span> <span class="o">/</span><span class="n">Create</span> <span class="o">/</span><span class="n">tn</span> <span class="n">my_task</span> <span class="o">/</span><span class="n">tr</span> <span class="n">c</span><span class="p">:</span>\<span class="n">temp</span>\<span class="n">my_task</span><span class="o">.</span><span class="n">bat</span> <span class="o">/</span><span class="n">sc</span> <span class="n">ONCE</span> <span class="o">/</span><span class="n">st</span> <span class="n">hh</span><span class="p">:</span><span class="n">mi</span><span class="p">:</span><span class="n">ss</span> <span class="o">/</span><span class="n">sd</span> <span class="n">yyyy</span><span class="o">/</span><span class="n">mm</span><span class="o">/</span><span class="n">dd</span>
+</pre></div>
+</div>
+<div class="section" id="how-to-s">
+<h3>How To`s<a class="headerlink" href="#how-to-s" title="제목 주소">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="HowTo.html"><span class="doc">How To's</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="contents.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Remote Execution Guide</a><ul>
+<li><a class="reference internal" href="#windows-remote-desktop-features">Windows Remote Desktop features</a></li>
+<li><a class="reference internal" href="#vnc-server-software">VNC Server software</a></li>
+<li><a class="reference internal" href="#other-remote-access-software">Other remote access software</a></li>
+<li><a class="reference internal" href="#tricks-to-run-automation-on-a-locked-machine">Tricks to run automation on a locked machine</a></li>
+<li><a class="reference internal" href="#start-remote-script-using-agent-based-ci">Start remote script using agent based CI</a></li>
+<li><a class="reference internal" href="#start-remote-script-directly">Start remote script directly</a><ul>
+<li><a class="reference internal" href="#how-to-s">How To`s</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>이전 항목</h4>
+  <p class="topless"><a href="wait_long_operations.html"
+                        title="이전 장">Waiting for Long Operations</a></p>
+  <h4>다음 항목</h4>
+  <p class="topless"><a href="controls_overview.html"
+                        title="다음 장">Methods available to each different control type</a></p>
+  <div role="note" aria-label="source link">
+    <h3>현재 문서</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/remote_execution.txt"
+            rel="nofollow">소스 코드를 보려면</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>빠른 검색</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="바로 가기" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>탐색</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="전체 색인"
+             >색인</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python 모듈 목록"
+             >모듈</a> |</li>
+        <li class="right" >
+          <a href="controls_overview.html" title="Methods available to each different control type"
+             >다음</a> |</li>
+        <li class="right" >
+          <a href="wait_long_operations.html" title="Waiting for Long Operations"
+             >이전</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">pywinauto 0.6.5 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Mark Mc Mahon and Contributors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
+    </div>
+  </body>
+</html>
