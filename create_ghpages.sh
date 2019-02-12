@@ -9,8 +9,7 @@ git rebase korean
 
 touch .nojekyll
 
-echo '!_build/' >> .gitignore
-echo '!env/' >> .gitignore
+echo '!docs/_build/' >> .gitignore
 
 cd docs
 sphinx-build -j auto -D language='ko' rst _build/html
