@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../index.txt:12
 msgid "What is it?"
-msgstr ""
+msgstr "pywinauto는 무엇인가?"
 
 #: ../../index.txt:13
 msgid ""
@@ -39,22 +39,24 @@ msgid ""
 "GUI. At it's simplest it allows you to send mouse and keyboard actions to"
 " windows dialogs and controls."
 msgstr ""
+"pywinauto는 마이크로소프트 윈도우 GUI를 자동화하기 위한 파이썬 모듈 집합이다. "
+"쉽게 말하면 윈도우 다이얼로그나 콘토롤로 마우스, 키보드 액션을 보낼 수 있다."
 
 #: ../../index.txt:19
 msgid "Installation"
-msgstr ""
+msgstr "설치"
 
 #: ../../index.txt:20
 msgid "Just run ``pip install pywinauto``"
-msgstr ""
+msgstr "``pip install pywinauto`` 실행"
 
 #: ../../index.txt:24
 msgid "Manual installation"
-msgstr ""
+msgstr "수동 설치"
 
 #: ../../index.txt:25
 msgid "Install the following Python packages"
-msgstr ""
+msgstr "다음 파이썬 패키지를 설치하라"
 
 #: ../../index.txt:27
 msgid "pyWin32_"
@@ -70,29 +72,30 @@ msgstr ""
 
 #: ../../index.txt:30
 msgid "*(optional)* Pillow_ (to make screenshoots)"
-msgstr ""
+msgstr "*(옵션)* Pillow_ (스크린샷 제작에 필요)"
 
 #: ../../index.txt:32
 msgid ""
 "Download latest pywinauto from "
 "https://github.com/pywinauto/pywinauto/releases"
 msgstr ""
+"https://github.com/pywinauto/pywinauto/releases 에서 최신 pywinauto를 다운로드 받는다."
 
 #: ../../index.txt:33
 msgid "Unpack and run ``python setup.py install``"
-msgstr ""
+msgstr "압축을 풀고 ``python setup.py install`` 명령을 실행한다."
 
 #: ../../index.txt:41
 msgid "To check you have it installed correctly Run Python ::"
-msgstr ""
+msgstr "정상적으로 설치되었는지 확인하려면 파이썬에서 다음을 실행한다.::"
 
 #: ../../index.txt:50
 msgid "How does it work"
-msgstr ""
+msgstr "동작 원리"
 
 #: ../../index.txt:51
 msgid "The core concept is described in the `Getting Started Guide`_."
-msgstr ""
+msgstr "핵심 개념은 `Getting Started Guide`_\ 에 설명되어 있다."
 
 #: ../../index.txt:56
 msgid ""
